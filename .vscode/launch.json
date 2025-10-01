@@ -1,0 +1,52 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome - Vue Frontend",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}/ClientApp/src",
+      "sourceMapPathOverrides": {
+        "webpack:///./src/*": "${webRoot}/*"
+      },
+      "preLaunchTask": "npm: dev - ClientApp"
+    },
+    {
+      "type": "msedge",
+      "request": "launch",
+      "name": "Launch Edge - Vue Frontend",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}/ClientApp/src",
+      "sourceMapPathOverrides": {
+        "webpack:///./src/*": "${webRoot}/*"
+      },
+      "preLaunchTask": "npm: dev - ClientApp"
+    },
+    {
+      "name": "C#: PTSDProject",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/bin/Debug/net8.0/PTSDProject.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Full Stack Debug (C# + Vue)",
+      "configurations": ["C#: PTSDProject", "Launch Edge - Vue Frontend"],
+      "stopAll": true
+    }
+  ]
+}
+

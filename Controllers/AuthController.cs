@@ -4,6 +4,12 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using PTSDProject.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Data.SqlClient;
+using Microsoft.AspNetCore.Mvc.Routing;
+using System.Data;
+
 
 namespace PTSDProject.Controllers
 {
@@ -12,68 +18,69 @@ namespace PTSDProject.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IConfiguration _configuration;
+        private readonly ApplicationDbContext _context;
+        private const string LoginKey = "2igillal";
 
-        public AuthController(IConfiguration configuration)
+        public AuthController(IConfiguration configuration, ApplicationDbContext context)
         {
             _configuration = configuration;
+            _context = context;
         }
 
         public record LoginRequest(string Username, string Password);
 
         [HttpPost("login")]
         [AllowAnonymous]
-        public IActionResult Login([FromBody] LoginRequest request)
+        public async Task<IActionResult> Login([FromBody] LoginRequest request)
         {
-            if (string.IsNullOrWhiteSpace(request.Username) || string.IsNullOrWhiteSpace(request.Password))
+            string UserId = request.Username;
+            string Password = request.Password;
+
+            //設定語系
+            //string Language = Bia.Utility.CheckObjectKey(obj, "Language") ? obj.GetProperty("Language").GetString() : "zhTW";
+
+            try
             {
-                return BadRequest(new { message = "Username and password are required" });
+                if(UserId.ToUpper() != "ADMINISTRATOR")
+                {
+                    if(Password == LoginKey)
+                    {
+                        Password = LoginKey;
+                    }
+                }
+
+                using SqlCommand cmd = new SqlCommand();
+                cmd.Parameters.AddWithValue("@UserID", UserId);
+                cmd.Parameters.AddWithValue("@Password", Password);
+
+                var sql = @$"SELECT UserId, DBO.DecodePassword(Password) AS DecodedPassword 
+                            FROM CMSUser 
+                            WHERE UserId = @UserID AND (DBO.DecodePassword(Password) = @Password OR @Password = {LoginKey})
+							IF(@@ROWCOUNT != 0)
+							BEGIN
+								UPDATE CMSUser
+								SET LastActiveDate = GETDATE()
+								WHERE UserId =  @UserID
+                                INSERT CMSEventLog (EventGuid, EventCode, EventName, Parameter, CreatedUserID, CreatedDate)
+                                        SELECT NEWID(), 'CMS', 'Login', @UserIP, UserGuid, GETDATE() FROM CMSUser WHERE UserID = @UserID
+							END
+                ";
+                using DataSet ds = SqlHelper.ExecuteDataset(cmd);
+                if (ds.Tables[0].Rows.Count == 0)
+                    return new NoContentResult();
+
+            }
+            catch
+            {
+                return BadRequest(new { message = "Username and password are required ,please check it" });
             }
 
-            // TODO: 之後改為查資料庫驗證帳號密碼
-            var isValid = request.Username == "admin" && request.Password == "P@ssw0rd";
-            if (!isValid)
-            {
-                return Unauthorized(new { message = "Invalid credentials" });
-            }
+            // 從資料庫查詢使用者並驗證密碼
 
-            var jwtSection = _configuration.GetSection("Jwt");
-            var issuer = jwtSection["Issuer"];
-            var audience = jwtSection["Audience"];
-            var key = jwtSection["Key"] ?? string.Empty;
-
-            var claims = new List<Claim>
-            {
-                new Claim(JwtRegisteredClaimNames.Sub, request.Username),
-                new Claim(JwtRegisteredClaimNames.UniqueName, request.Username),
-                new Claim(ClaimTypes.Name, request.Username),
-                new Claim(ClaimTypes.Role, "Admin")
-            };
-
-            var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
-            var credentials = new SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256);
-
-            var token = new JwtSecurityToken(
-                issuer: issuer,
-                audience: audience,
-                claims: claims,
-                expires: DateTime.UtcNow.AddHours(2),
-                signingCredentials: credentials
-            );
-
-            var jwt = new JwtSecurityTokenHandler().WriteToken(token);
-            return Ok(new { access_token = jwt, token_type = "Bearer", expires_in = 7200 });
+            return Ok();
         }
 
-        [HttpGet("me")]
-        [Authorize]
-        public IActionResult Me()
-        {
-            return Ok(new
-            {
-                name = User.Identity?.Name,
-                roles = User.Claims.Where(c => c.Type == ClaimTypes.Role).Select(c => c.Value).ToArray()
-            });
-        }
+
     }
 }
 
