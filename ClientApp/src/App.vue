@@ -38,14 +38,8 @@ async function login() {
       username: username.value,
       password: password.value
     })
-    const token = res.data.access_token
-    localStorage.setItem('access_token', token)
-    const meRes = await axios.get('/api/auth/me', {
-      headers: { Authorization: `Bearer ${token}` }
-    })
-    me.value = meRes.data
   } catch (e: any) {
-    error.value = e?.response?.data?.message || '登入失敗'
+    error.value = e.response.data.message || '登入失敗'
   } finally {
     loading.value = false
   }
