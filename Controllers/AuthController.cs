@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Data.SqlClient;
 using Microsoft.AspNetCore.Mvc.Routing;
 using System.Data;
+using System.Net;
 
 
 namespace PTSDProject.Controllers
@@ -48,14 +49,15 @@ namespace PTSDProject.Controllers
                         Password = LoginKey;
                     }
                 }
-
+                string UserIP = GetUserIP();
                 using SqlCommand cmd = new SqlCommand();
                 cmd.Parameters.AddWithValue("@UserID", UserId);
                 cmd.Parameters.AddWithValue("@Password", Password);
+                cmd.Parameters.AddWithValue("@UserIP", UserIP);
 
-                var sql = @$"SELECT UserId, DBO.DecodePassword(Password) AS DecodedPassword 
+                cmd.CommandText = @$"SELECT UserId, DBO.DecodePassword(Password) AS DecodedPassword 
                             FROM CMSUser 
-                            WHERE UserId = @UserID AND (DBO.DecodePassword(Password) = @Password OR @Password = {LoginKey})
+                            WHERE UserId = @UserID AND (DBO.DecodePassword(Password) = @Password OR @Password = '{LoginKey}')
 							IF(@@ROWCOUNT != 0)
 							BEGIN
 								UPDATE CMSUser
@@ -80,6 +82,23 @@ namespace PTSDProject.Controllers
             return Ok();
         }
 
+
+        private string GetUserIP()
+        {
+            IPAddress remoteIpAddress = Request.HttpContext.Connection.RemoteIpAddress;
+            if (remoteIpAddress != null)
+            {
+                // If we got an IPV6 address, then we need to ask the network for the IPV4 address 
+                // This usually only happens when the browser is on the same machine as the server.
+                if (remoteIpAddress.AddressFamily == System.Net.Sockets.AddressFamily.InterNetworkV6)
+                {
+                    remoteIpAddress = System.Net.Dns.GetHostEntry(remoteIpAddress).AddressList.First(x => x.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork);
+                }
+                return remoteIpAddress.ToString();
+            }
+            else
+                return string.Empty;
+        }
 
     }
 }
