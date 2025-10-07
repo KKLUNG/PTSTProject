@@ -69,7 +69,36 @@ namespace PTSDProject.Controllers
                 ";
                 using DataSet ds = SqlHelper.ExecuteDataset(cmd);
                 if (ds.Tables[0].Rows.Count == 0)
-                    return new NoContentResult();
+                    return BadRequest(new { message = "帳號不存在" });
+
+                // 驗證成功 -> 簽發 JWT
+                var jwtSection = _configuration.GetSection("Jwt");
+                var issuer = jwtSection["Issuer"];
+                var audience = jwtSection["Audience"];
+                var key = jwtSection["Key"] ?? string.Empty;
+
+                var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
+                var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+                var claims = new List<Claim>
+                {
+                    new Claim(JwtRegisteredClaimNames.Sub, UserId),
+                    new Claim(JwtRegisteredClaimNames.UniqueName, UserId),
+                    new Claim(ClaimTypes.Name, UserId)
+                };
+
+                var expires = DateTime.UtcNow.AddHours(2);
+                var token = new JwtSecurityToken(
+                    issuer: issuer,
+                    audience: audience,
+                    claims: claims,
+                    notBefore: DateTime.UtcNow,
+                    expires: expires,
+                    signingCredentials: credentials
+                );
+
+                var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
+                return Ok(new { message = "login sucess", token = tokenString });
 
             }
             catch
@@ -77,9 +106,7 @@ namespace PTSDProject.Controllers
                 return BadRequest(new { message = "Username and password are required ,please check it" });
             }
 
-            // 從資料庫查詢使用者並驗證密碼
-
-            return Ok();
+            // 從資料庫查詢使用者並驗證密碼（見上）
         }
 
 
