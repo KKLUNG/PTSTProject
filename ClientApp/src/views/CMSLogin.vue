@@ -1,41 +1,226 @@
 <template>
-  <div class="container">
+<div>
+    <DxLoadPanel
+      :hide-on-outside-click="false"
+      :visible="loading"
+      :shading="true"
+      :show-pane="true"
+      shading-color="transparent"
+      message="loadingMessage"
+    />
+    <dx-validation-group ref="vg">
+      <div class="login-header">
+        <!--<div class="title">{{ title }}</div>-->
+        <div class="loginTitle">{{ appInfo.titleLogo }}<br /></div>
+        <br />
+        <div class="loginSubTitle" v-html="logoVision"></div>
+      </div>
 
-    <div class="login-card dx-card">
-      <h2 class="title">登入</h2>
+      <div class="dx-field">
+        <i class="icon dx-icon-user" style="font-size: 1.8em" />
+        <dx-text-box
+          placeholder="Your account"
+          width="100%"
+          :value.sync="login"
+        >
+          <dx-validator>
+            <dx-required-rule message="Account is required" />
+          </dx-validator>
+        </dx-text-box>
+      </div>
 
-      <div class="field">
-        <label>帳號</label>
-        <DxTextBox
-          v-model:value="username"
-          placeholder="請輸入帳號"
-          stylingMode="filled"
-          @keyup.enter="login"
+      <div class="dx-field">
+        <i class="icon icon-lock" style="font-size: 1.8em" />
+        <dx-text-box
+          placeholder="Your password"
+          width="100%"
+          :mode="passwordMode"
+          :value.sync="password"
+          @enter-key="onEnterKey"
+        >
+          <dx-text-box-button
+            :options="passwordButton"
+            name="password"
+            location="after"
+          />
+          <dx-validator>
+            <dx-required-rule message="Password is required" />
+          </dx-validator>
+        </dx-text-box>
+      </div>
+
+      <div class="dx-field" v-if="appInfo.isShowFactorySet">
+        <i class="icon dx-icon-globe" style="font-size: 1.8em" />
+        <DxSelectBox
+          :data-source="factorySet"
+          display-expr="display"
+          key-expr="value"
+          width="100%"
+          @value-changed="onSelectedFactory"
         />
       </div>
 
-      <div class="field">
-        <label>密碼</label>
-        <DxTextBox
-          v-model:value="password"
-          mode="password"
-          placeholder="請輸入密碼"
-          stylingMode="filled"
-          @keyup.enter="login"
+      <div
+        v-show="isCaptcha"
+        style="
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap;
+          display: flex;
+        "
+      >
+        <div class="formButton1">
+          <span :style="headerCaptionStyle"
+            >{{ randomA }} + {{ randomB }} =
+          </span>
+        </div>
+        <div class="formButton1">
+          <DxNumberBox
+            placeholder="Your answer"
+            width="100px"
+            :value.sync="answer"
+            :step="0"
+            @enter-key="onEnterKey"
+          >
+          </DxNumberBox>
+        </div>
+      </div>
+      <!-- <div class="dx-field">
+      <dx-check-box :value.sync="rememberUser" text="記住我" />
+      </div> -->
+      <br />
+      <div class="dx-field">
+        <DxButton
+          :disabled="disableButton"
+          ref="btnLogin"
+          type="default"
+          text="Login"
+          width="100%"
+          @click="onLoginClick"
         />
       </div>
-
-
+    </dx-validation-group>
+    <br />
+    <!-- allen 2021.03.04 忘記密碼 -->
+    <div class="dx-field" v-if="appInfo.isPasswordChangeAlert">
       <DxButton
-        :text="'登入'"
+        ref="submit"
         type="default"
-        stylingMode="contained"
-        :disabled="loading || !username || !password"
-        @click="onLoginClick"
+        text="Forgot password"
+        width="100%"
+        @click="onForgetPassword"
       />
-      <p v-if="error" class="error">{{ error }}</p>
-      <pre v-if="me" class="success">{{ me }}</pre>
     </div>
+    <img :src="logoUrl" width="120px" />
+    <br />
+    <div v-show="appInfo.isCordova" style="color: gray">
+      v:{{ cordovaAppVersion }}
+    </div>
+    <RootPopup
+      ref="rootPopup"
+      :visible="popupVisible"
+      :drag-enabled="false"
+      :hide-on-outside-click="true"
+      :show-title="true"
+      :width="400"
+      :height="450"
+      titleTemplate="title"
+      @hidden="
+        () => {
+          popupVisible = false;
+        }
+      "
+    >
+      <template #title>
+        <div class="toolbarArea" style="padding: 5px">
+          <div class="leftToolbar">
+            <img :src="logoUrl" width="120px" />
+          </div>
+          <div class="rightToolbar">
+            <DxButton
+              icon="icon dx-icon-close"
+              @click="
+                () => {
+                  popupVisible = false;
+                }
+              "
+            />
+          </div>
+        </div>
+      </template>
+      <div class="dx-field">
+        <div style="margin: 0px auto">
+          <h6>Forgot Password</h6>
+        </div>
+      </div>
+      <div class="dx-field">
+        <dx-text-box
+          placeholder="Your account"
+          width="100%"
+          :value.sync="forgotPasswordId"
+        >
+          <dx-validator>
+            <dx-required-rule message="Account is required" />
+          </dx-validator>
+        </dx-text-box>
+      </div>
+      <div class="dx-field">
+        <dx-text-box
+          placeholder="email or cellphone"
+          width="100%"
+          :value.sync="forgotPasswordEmailOrCellPhone"
+        >
+          <dx-validator>
+            <dx-required-rule message="email or cellphone is required" />
+          </dx-validator>
+        </dx-text-box>
+      </div>
+
+      <div class="dx-field" v-if="appInfo.isShowFactorySet">
+        <i class="icon dx-icon-globe" style="font-size: 1.8em" />
+        <DxSelectBox
+          ref="forgotSelect"
+          :data-source="factorySet"
+          display-expr="display"
+          key-expr="value"
+          width="100%"
+          @value-changed="onSelectedFactory"
+        />
+      </div>
+
+      <div
+        v-show="isCaptcha"
+        style="
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap;
+          display: flex;
+        "
+      >
+        <div class="formButton1">
+          <span :style="headerCaptionStyle"
+            >{{ randomA }} + {{ randomB }} =
+          </span>
+        </div>
+        <div class="formButton1">
+          <DxNumberBox
+            placeholder="Your answer"
+            width="100px"
+            :value.sync="answer"
+          ></DxNumberBox>
+        </div>
+      </div>
+      <br />
+      <div class="dx-field">
+        <dx-button
+          :disabled="disableButton"
+          type="default"
+          text="Submit"
+          width="100%"
+          @click="onSendPasswordToEmail"
+        />
+      </div>
+    </RootPopup>
   </div>
 </template>
 
@@ -43,62 +228,143 @@
 import axios from 'axios'
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import DxTextBox from 'devextreme-vue/text-box'
 import DxButton from 'devextreme-vue/button'
 import auth from '../utils/auth'
+import DxTextBox from "devextreme-vue/text-box";
+import DxNumberBox from "devextreme-vue/number-box";
+import { DxButton as DxTextBoxButton } from "devextreme-vue/text-box";
+import DxValidationGroup from "devextreme-vue/validation-group";
+import DxValidator, { DxRequiredRule } from "devextreme-vue/validator";
+import DxSelectBox from "devextreme-vue/select-box";
+import { getCurrentInstance } from 'vue'
 
-const username = ref('')
-const password = ref('')
-const loading = ref(false)
-const error = ref('')
-const me = ref<any>(null)
-const router = useRouter()
+let loginCount = 0;
 
-
-
-async function login() {
-  error.value = ''
-  me.value = null
-  if (!username.value && !password.value) {
-    error.value = '請輸入帳號與密碼'
-    return
+const { appContext } = getCurrentInstance()!
+const appInfo = appContext.config.globalProperties.appInfo
+const popupVisible = ref(false);
+const title = appInfo.title;
+const login = ref('');
+const password = ref('');
+const rememberUser = ref(false);
+const loading = ref(false);
+const loadingMessage = ref('Loading...please Wait');
+const logoUrl = "logo.png";
+const randomAnswer = ref(0);
+const randomA = ref(0);
+const randomB = ref(0);
+const answer = ref(null);
+const isCaptcha = ref(false);
+const isLargeScreen = window.innerWidth > 960 ? true : false;
+const passwordMode = "password";
+const passwordButton = ref({
+  icon: "key",
+  type: "default",
+  onClick: () => {
+    passwordMode = passwordMode.value === "text" ? "password" : "text";
   }
-  if (!username.value) {
-    error.value = '請輸入帳號'
-    return
-  }
-  if (!password.value) {
-    error.value = '請輸入密碼'
-    return
-  }
-  loading.value = true
-  try {
-    const res = await axios.post('/api/auth/login', {
-      username: username.value,
-      password: password.value
-    })
-    me.value = JSON.stringify(res.data, null, 2)
+});
+const forgotPasswordId = ref('');
+const forgotPasswordEmailOrCellPhone = ref('');
+const disableButton = ref(false);
+const factorySet = ref([]);
+const brandSet = ref([]);
+const cordovaAppVersion = ref('');
+const logoVision = appInfo.defaultLanguage ? appInfo.defaultLanguage === "zhTW" ? appInfo.loginVisionEN : appInfo.loginVisionTW;
+const timer = ref(null);
+const headerCaptionStyle = ref("color:" + this $cssVariableValue.baseFvTextEditorColor )
 
-    // 保存 JWT 並設定 Authorization header
-    const token = res.data?.token
-    if (token) {
-      localStorage.setItem('authToken', token)
-      axios.defaults.headers.common['Authorization'] = `Bearer ${token}`
-      // 記錄登入並導頁
-      auth.logIn(token)
-      router.push('/CMSHomePage')
-    }
-  } catch (e: any) {
-    error.value = e.response.data.message || '登入失敗'
-  } finally {
-    loading.value = false
-  }
+
+const onLoginClick = (e:Event) => {
+      if (appInfo.isShowFactorySet) {
+        if (isNullOrEmpty(appInfo.factory)) {
+          alert("Please select location", appInfo.title);
+          return;
+        }
+      }
+
+      if (!vg.validate().isValid) {
+        return;
+      }
+
+      disableButton.value = true;
+      if (randomAnswer.value != answer.value && isCaptcha.value) {
+        alert(
+          "The answer is " +
+            randomAnswer.value.toString() +
+            ", please try again.",
+          appInfo.title
+        );
+        randomA.value = Math.floor(Math.random() * Math.floor(50));
+        randomB.value = Math.floor(Math.random() * Math.floor(50));
+        randomAnswer.value = randomA.value + randomB.value;
+
+        loginCount.value++;
+        if (loginCount.value > 5) {
+          alert("Please try it later!!", appInfo.title);
+          var b = $refs["btnLogin"].instance;
+          b.option("disabled", true);
+        }
+        disableButton.value = false;
+        return;
+      }
+
+      loading.value = true;
+      var para = {
+        userId: login.value,
+        password: password.value,
+      };
+      logining(para);
+},
+
+const onEnterKey = (e:Event) => {
+  var b = $refs["btnLogin"].instance;
+  onLoginClick(e);
+  //b.focus();
+},
+
+const onSelectedFactory = (e:Event) => {
+  appInfo.factory = e.value.factory;
+  appInfo.serveUrl = e.value.serveUrl;
+  setDefault();
+},
+
+const setDefault = () => {
+  if (appInfo.isCordova) {
+        if (appInfo.isShowFactorySet) {
+          if (!isNullOrEmpty(appInfo.factory)) {
+            //this.appInfo.serverUrl = this.appInfo.factory;
+            var o = factorySet.value.filter(
+              (x) => x.display == appInfo.factory
+            );
+            if (o.length > 0) {
+              appInfo.serverUrl = o[0].value;
+            }
+          }
+        }
+        isCaptcha.value = false;
+        appInfo.rootGuid = appInfo.mobileRoot;
+        appInfo.homeGuid = appInfo.mobileHome;
+      } else {
+        if (appInfo.isMobile && appInfo.isShowMobileSwitch) {
+          //手機網頁
+          isCaptcha.value = appInfo.isShowCaptcha;
+          appInfo.rootGuid = appInfo.mobileRoot;
+          appInfo.homeGuid = appInfo.mobileHome;
+        } else {
+          //PC網頁
+          isCaptcha.value = appInfo.isShowCaptcha; //for all
+          appInfo.rootGuid = appInfo.pcRoot;
+          appInfo.homeGuid = appInfo.pcHome;
+        }
+      }
+      //keep rootGuid; used in header-toolbar
+      window.localStorage.setItem("rootGuid", appInfo.rootGuid);
+      window.localStorage.setItem("homeGuid", appInfo.homeGuid);
 }
 
-async function onLoginClick() {
-  username.value = username.value.trim()
-  password.value = password.value.trim()
-  await login()
+const onForgetPassword = () => {
+      popupVisible.value = true;
 }
 
 </script>
