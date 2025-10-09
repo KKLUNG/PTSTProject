@@ -11,6 +11,7 @@ declare module '@vue/runtime-core' {
   interface ComponentCustomProperties {
     $appInfo: typeof import('./utils/app-info').default;
     $isNullOrEmpty: (v?: string | null) => boolean;
+    $cssVariable: any;
 
   }
 }

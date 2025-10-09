@@ -1,0 +1,19 @@
+@import "@/themes/bia-custom.scss";
+:export {
+    baseAccent: $base-accent; //原色系
+    baseTextColor: $base-text-color; //文字顏色
+    baseBg :$base-bg;  //頁面底色
+    baseBorderColor:$base-border-color;  //框線顏
+    baseBorderRadius:$base-border-radius; 
+    baseWebPartIcon: $webpartIcon;
+    baseWebpartHeaderColor : $webpartHeaderColor;
+    baseWebpartHeaderBackgroundColor :  $webpartHeaderBackgroundColor;
+    baseGVHeaderColor : $gvHeaderColor;
+    baseGvHeaderBackgroundColor : $gvHeaderBackgroundColor;
+    baseHyperLinkColor : $hyperLinkColor;
+    baseLoginBackgroundColor : $loginBackgroundColor;
+    baseFvHeaderColor : $fvHeaderColor;
+    baseFvTextEditorColor : $fvTextEditorColor;
+    
+}
+ 

@@ -1,6 +1,8 @@
 import 'devextreme/dist/css/dx.common.css';
 import './themes/generated/theme.base.css';
 import './themes/generated/theme.additional.css';
+import cssVariable from "@/css/scssToFunction.scss";
+
 
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -16,5 +18,6 @@ import appInfo from "./utils/app-info";
 themes.initialized(() => {
   const app = createApp(App)
   app.config.globalProperties.$appInfo = appInfo
+  app.config.globalProperties.$cssVariable = cssVariable
   app.mount('#app')
 })

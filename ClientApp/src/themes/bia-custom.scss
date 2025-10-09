@@ -1,0 +1,254 @@
+@import "@/themes/generated/variables.base.scss";
+//this is custom for system defined color css
+//custom color overhere 
+$menuIcon: #62f053;      
+$webpartIcon:darkblue;
+//$captionColor : black;
+$webpartHeaderColor : darkblue;
+$webpartHeaderBackgroundColor :$base-accent;
+$gvHeaderColor : black;
+$gvHeaderBackgroundColor : yellow;
+$gvFocusRowBackgroundColor : $base-accent;
+$popupHeaderBackgroundColor : $base-accent;
+$fvHeaderColor : $base-text-color;
+$fvTextEditorColor : $base-text-color;
+$hyperLinkColor : #000000;
+$headerToolbarBackGroundColor : $base-bg;
+$popupToolbarBackGroundColor : #FFFFFF;
+$buttonBackgroundColor : #ffffff;
+$textButtonBackgroundColor : transparent;
+$textButtonColor : #ffffff;
+$requireMarkColor : red;
+$loginBackgroundColor : rgba(255, 255, 255, 0.8);
+$mainMenuBackgroundColor : $base-accent;
+
+//system
+$toolbarHeight: 24px;  //pc 24, cordova 35
+$gridCaptionMarginLeft: 0px;  //pc 0, cordova -6
+$toolbarCaptionMarginTop: 2px;  //pc 2, cordova 0
+$side-panel-min-width: 60px;  //move to here
+$gridCaptionHeight: calc($toolbarHeight + 6px);
+
+.loginTitle {
+    color: $webpartHeaderColor;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: transparent;
+    text-shadow: rgb(46, 46, 46) 0px 4px 5px;
+
+}
+
+.loginSubTitle {
+    color: $webpartHeaderColor;
+            font-size: 22px;
+            background-color: transparent;
+            text-shadow: rgb(46, 46, 46) 0px 4px 5px;
+}
+
+//這個是用在沒有icon的custom button, 只有文字. 所以背景用透明, 文字應用自訂義
+.customButtonClass {
+    background-color: $textButtonBackgroundColor;
+    color:$textButtonColor;
+}
+
+p {
+    margin: 0px; //預設12 孫老大說難看, 要改
+  }
+  
+hr {
+    border: 0.01rem solid $base-border-color;
+    color: $base-border-color;
+  }
+  
+  
+  a {
+    cursor: pointer;
+    color: $base-accent;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+ 
+  
+.toolbarIcon {
+    font-size: 1.0em;
+    color: $webpartIcon; /*$base-accent;*/
+    padding: 0px 0 0px 0px;
+    display: flex;
+  }
+  
+  .toolbarArea {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    margin-bottom: 0px;
+  }
+  
+  /* .leftToolbar {
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+  } */
+  
+  .leftToolbar {
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    white-space: nowrap;
+    word-break: normal;
+    font-size:1.1em;
+    height: $toolbarHeight; 
+    
+  }
+  
+  .rightToolbar {
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    display: flex;
+    white-space: nowrap;
+    word-break: normal;
+    font-size:1.1em;
+    height: $toolbarHeight; 
+  }
+  
+  //webpart caption, 
+  //add bold 2023.03.12
+  .toolbarCaption {
+     margin-top:$toolbarCaptionMarginTop;
+     font-weight:bold;
+     color: $webpartHeaderColor;
+  }
+  
+  
+
+  
+  
+  
+  .formButtonArea {    
+    background-color: $webpartHeaderBackgroundColor;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    margin-bottom: -8px;
+    //transform: translate(calc(0% + 0.00005px), calc(0% + 0.00005px)); // this is used for popup vague font 
+  }
+  
+  .formButton {
+    padding: 0px;
+    display: flex;
+    margin: -1.5px;
+  }
+  
+  .formButtonArea1 {
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    margin-bottom: -8px;
+  }
+  
+  .formButtonArea2 {
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    padding-right: 10px;
+    padding-left: 0px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+  }
+  
+  .formButton1 {
+    padding: 0px;
+    display: flex;
+    margin: 1.5px;
+  }
+  
+  
+  //textarea placeholder color
+  .grayColor {
+    color: gray;
+  }
+  .blackColor {
+    color: black;
+  }
+  
+  .ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  .responsive-paddings1 {
+    padding: 0px 10px 0px 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .responsive-paddings2 {
+    padding: 0px 0px 0px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .image-container {
+    overflow: hidden;
+    border-radius: 15%;
+    height: 80px;
+    width: 80px;
+    margin: 0 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    .user-image {
+      width: 100%;
+      height: 100%;
+      background: no-repeat #fff;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+  
+  
+  .biaImeMode {
+    ime-mode: disabled;
+     
+  }
+  
+  //for numberbox
+  .biaImeModeNoCursor {
+    ime-mode: disabled;
+    pointer-events: auto;  
+    cursor: text!important; 
+    background-color: #ff0000;
+  }
+  
+  //readonly remove hand cursor
+  .input-no-cursor input {  
+    pointer-events: auto;  
+    cursor: text!important; 
+  } 
+  
+  
+  

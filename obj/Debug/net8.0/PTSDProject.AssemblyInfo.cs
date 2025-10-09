@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PTSDProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24bbaa0fc86ffd8de1c77a2037bfceea3ed3c3dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+512d1a8d94d074f88258ca85e45d585cfe4cf609")]
 [assembly: System.Reflection.AssemblyProductAttribute("PTSDProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PTSDProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
