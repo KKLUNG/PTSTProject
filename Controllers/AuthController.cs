@@ -127,6 +127,57 @@ namespace PTSDProject.Controllers
                 return string.Empty;
         }
 
+        [HttpPost]
+        public ActionResult ForgetPasswordSendMail([FromBody] JsonElement obj)
+        {
+            try
+            {
+                string forgotPasswordEmailOrCellPhone = obj.GetProperty("forgotPasswordEmailOrCellPhone").GetString();
+                string UserId = obj.GetProperty("forgotPasswordId").GetString();
+                string cc = string.Empty;
+                string bcc = string.Empty;
+                string subject = "EIP: Forgot Password";
+                
+                using SqlCommand cmd = new SqlCommand();
+                cmd.Parameters.AddWithValue("@UserID", UserId);
+                cmd.Parameters.AddWithValue("@UserEmailOrCellPhone", forgotPasswordEmailOrCellPhone);
+                cmd.CommandText = @$"
+                                    SELECT 'Your password is : ' + dbo.Decode(Password) AS DecodePassword, UserGuid, UserEmail 
+                                    FROM vw_CMSUser WHERE UserId = @UserId and (UserEMail= @UserEmailOrCellPhone OR UserCellPhone = @UserEmailOrCellPhone) 
+                                    
+                                    ";
+
+                using DataSet ds = SqlHelper.ExecuteDataset(cmd);
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    string body = ds.Tables[0].Rows[0]["DecodePassword"].ToString();
+                    string UserGuid = ds.Tables[0].Rows[0]["UserGuid"].ToString();
+                    string to = ds.Tables[0].Rows[0]["UserEmail"].ToString();
+                    IConfiguration config = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .Build();
+                    string systemSender = config.GetValue<string>("AppSettings:MailAccount");
+
+                    Bia.AppNotification.PushWFSMessage(body, UserGuid);
+                    if (to != string.Empty)
+                        Bia.Helpers.Mail.SendSimpleMail(systemSender, to, cc, bcc, subject, true, body);
+                    return new OkResult();
+                }
+                else
+                {
+                    return new NoContentResult();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                string errMsg = Newtonsoft.Json.JsonConvert.SerializeObject(ex.Message, Newtonsoft.Json.Formatting.Indented);
+                return new BadRequestObjectResult(errMsg);
+            }
+
+
+        }
+
     }
 }
 

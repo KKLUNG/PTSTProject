@@ -226,7 +226,7 @@
 
 <script setup lang="ts">
 import axios from 'axios'
-import { ref } from 'vue'
+import { ref ,nextTick } from 'vue'
 import { useRouter } from 'vue-router'
 import DxButton from 'devextreme-vue/button'
 import auth from '../utils/auth'
@@ -235,10 +235,13 @@ import DxNumberBox from "devextreme-vue/number-box";
 import { DxButton as DxTextBoxButton } from "devextreme-vue/text-box";
 import DxValidationGroup from "devextreme-vue/validation-group";
 import DxValidator, { DxRequiredRule } from "devextreme-vue/validator";
-import DxSelectBox from "devextreme-vue/select-box";
+import SelectBox from "devextreme-vue/select-box";
 import { getCurrentInstance } from 'vue'
 import type dxButton from 'devextreme/ui/button';
 import type { ValueChangedEvent } from 'devextreme/ui/select_box';
+import type ValidationGroup from 'devextreme/ui/validation_group';
+import type dxSelectBox from 'devextreme/ui/select_box'
+
 
 let loginCount = 0;
 
@@ -269,16 +272,40 @@ const passwordButton: { icon: string; type: string; onClick: () => void } = {
     passwordMode.value = passwordMode.value === 'text' ? 'password' : 'text';
   },
 };
-const forgotPasswordId = ref('');
-const forgotPasswordEmailOrCellPhone = ref('');
+const forgotPasswordId = ref<string>('');
+const forgotPasswordEmailOrCellPhone = ref<string>('');
 const disableButton = ref(false);
-const factorySet = ref([]);
 const brandSet = ref([]);
 const cordovaAppVersion = ref('');
-const logoVision = appInfo.defaultLanguage ? appInfo.defaultLanguage === "zhTW" ? appInfo.loginVisionEN : appInfo.loginVisionTW;
+const logoVision = appInfo.defaultLanguage === "zhTW" ? appInfo.loginVisionEN : appInfo.loginVisionTW;
 const timer = ref(null);
 const headerCaptionStyle = ref("color:" + cssVariable.baseFvTextEditorColor )
 const btnLogin = ref<{ instance: dxButton } | null>(null)
+const vg = ref<{ instance: ValidationGroup } | null>(null);
+const factorySet = ref<FactoryItem[]>([]);
+const forgotSelect = ref<{ instance: dxSelectBox } | null>(null);
+const showAlert = appContext.config.globalProperties.alert as (
+  message: string, title?: string, buttonText?: string, f?: () => void
+) => void
+
+// helper: unified POST wrapper
+const apiPost = <T = any>(apiUrl: string, params: any) => {
+  return axios.post<T>(apiUrl, params, {
+    baseURL: appInfo.serverUrl ?? undefined,
+    responseType: 'json',
+    headers: {
+      Authorization: 'Bearer ' + auth.getToken()
+    }
+  })
+}
+interface ForgotPasswordFormData {
+  forgotPasswordId: string;
+  forgotPasswordEmailOrCellPhone: string;
+}
+
+type DxValidationResult = ReturnType<ValidationGroup['validate']>;
+type FactoryItem = { display: string; value: string; factory?: string };
+
 
 const onLoginClick = (e:Event) => {
       if (appInfo.isShowFactorySet) {
@@ -288,7 +315,8 @@ const onLoginClick = (e:Event) => {
         }
       }
 
-      if (!vg.validate().isValid) {
+      const result: DxValidationResult | undefined = vg.value?.instance.validate();
+      if (!result || !result.isValid) {
         return;
       }
 
@@ -315,13 +343,13 @@ const onLoginClick = (e:Event) => {
         password: password.value,
       };
       logining(para);
-},
+}
 
 const onEnterKey = (e:Event) => {
   const b = btnLogin.value!.instance;
   onLoginClick(e);
   //b.focus();
-},
+}
 
 function onSelectedFactory(e: ValueChangedEvent) {
   const selected = e.value as { factory: string; value: string; display: string };
@@ -332,7 +360,7 @@ function onSelectedFactory(e: ValueChangedEvent) {
 const setDefault = () => {
   if (appInfo.isCordova) {
         if (appInfo.isShowFactorySet) {
-          if (!isNullOrEmpty(appInfo.factory)) {
+          if (!appContext.config.globalProperties.$isNullOrEmpty(appInfo.factory)) {
             //this.appInfo.serverUrl = this.appInfo.factory;
             var o = factorySet.value.filter(
               (x) => x.display == appInfo.factory
@@ -368,80 +396,79 @@ const onForgetPassword = () => {
 }
 
 const onSendPasswordToEmail = () => {
-  if (this.$appInfo.isShowFactorySet) {
-        var fs = this.$refs["forgotSelect"].instance;
-        if (this.isNullOrEmpty(fs.option("value"))) {
-          this.alert("please select location", this.$appInfo.title);
-          return;
+  if (appInfo.isShowFactorySet) {
+    const fs = forgotSelect.value!.instance;
+      if (appContext.config.globalProperties.$isNullOrEmpty(fs.option("value") as string)) {
+        showAlert("please select location", appInfo.title);
+        return;
         }
       }
 
       var that = this;
-      this.disableButton = true;
+      disableButton.value = true;
       //先判斷加減數字是否正確
-      if (this.randomAnswer != this.answer && this.isCaptcha) {
-        this.alert(
+      if (randomAnswer.value != answer.value && isCaptcha.value) {
+        showAlert(
           "The answer is " +
-            this.randomAnswer.toString() +
+            randomAnswer.value.toString() +
             ", please try again.",
-          this.$appInfo.title
+          appInfo.title
         );
-        this.randomA = Math.floor(Math.random() * Math.floor(50));
-        this.randomB = Math.floor(Math.random() * Math.floor(50));
-        this.randomAnswer = this.randomA + this.randomB;
-        this.disableButton = false;
+        randomA.value = Math.floor(Math.random() * Math.floor(50));
+        randomB.value = Math.floor(Math.random() * Math.floor(50));
+        randomAnswer.value = randomA.value + randomB.value;
+        disableButton.value = false;
         return;
       }
 
-      var formData = {};
+      const formData: ForgotPasswordFormData = {
+        forgotPasswordId: forgotPasswordId.value,
+        forgotPasswordEmailOrCellPhone: forgotPasswordEmailOrCellPhone.value
+      };
       //成功, else無mail
-      formData["forgotPasswordId"] = this.forgotPasswordId;
-      formData["forgotPasswordEmailOrCellPhone"] =
-        this.forgotPasswordEmailOrCellPhone;
-      this.apiPost("/api/auth/ForgetPasswordSendMail", formData)
+      apiPost('/api/auth/ForgetPasswordSendMail', formData)
         .then((res) => {
           if (res.status == 200) {
-            that.alert("Password has been sent.", that.$appInfo.title);
-            that.popupVisible = false;
+            showAlert('Password has been sent.', appInfo.title);
+            popupVisible.value = false;
           } else {
-            that.alert("No record, please contact IT.", that.$appInfo.title);
+            showAlert('No record, please contact IT.', appInfo.title);
           }
-          that.disableButton = false;
+          disableButton.value = false;
         })
         .catch((err) => {
-          that.disableButton = false;
-          that.alert(err, that.$appInfo.title);
+          disableButton.value = false;
+          showAlert(err, appInfo.title);
         });
 }
 
 const logining = async (para) => {
       //2021.12.29 清除 $ms
       //this.$ms = {};
-      for (var key in this.$ms) {
-        delete this.$ms[key];
+      for (var key in ms.value) {
+        delete ms.value[key];
       }
 
       //2023.08.25 必須用上面的方法清空
       //Object.assign(this.$ms, {});
       //console.log(this.$ms)
 
-      var that = this;
-      await this.apiPost("/api/auth/login", para)
+      await apiPost("/api/auth/login", para)
         .then(async (res) => {
           if (res.status == 200) {
             if (res.data[0].IsIPAllow == "1") {
               //#region loginSuccess
               auth.logIn(res.data[0].Token);
-              that.$appInfo.userInfo.userId = res.data[0].UserId;
-              that.$appInfo.userInfo.userImageUrl = res.data[0].UserImageUrl;
-              that.$appInfo.userInfo.userGuid = res.data[0].UserGuid;
-              that.$appInfo.userInfo.userName = res.data[0].UserName;
-              that.$appInfo.userInfo.deptGuid = res.data[0].DeptGuid;
-              that.$appInfo.userInfo.deptName = res.data[0].DeptName;
-              that.$appInfo.userInfo.deptNameAll = res.data[0].DeptNameAll;
-              that.$appInfo.userInfo.userTitle = res.data[0].UserTitle;
-              that.$appInfo.userInfo.groupNames = res.data[0].GroupNames;
-              that.$appInfo.userInfo.groupGuids = res.data[0].GroupGuids;
+              appInfo.userInfo.userId = res.data[0].UserId;
+              appInfo.userInfo.userImageUrl = res.data[0].UserImageUrl;
+              appInfo.userInfo.userGuid = res.data[0].UserGuid;
+              appInfo.userInfo.userName = res.data[0].UserName;
+              appInfo.userInfo.deptGuid = res.data[0].DeptGuid;
+              appInfo.userInfo.deptName = res.data[0].DeptName;
+              appInfo.userInfo.deptNameAll = res.data[0].DeptNameAll;
+              appInfo.userInfo.userTitle = res.data[0].UserTitle;
+              appInfo.userInfo.groupNames = res.data[0].GroupNames;
+              appInfo.userInfo.groupGuids = res.data[0].GroupGuids;
 
               let lastLoginDate = res.data[0].LastActiveDate;
               window.localStorage.userId = para.userId;
