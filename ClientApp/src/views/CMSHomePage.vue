@@ -110,6 +110,135 @@
 </template>
 
 <script setup lang="ts">
+import { ref, computed, onMounted, getCurrentInstance } from 'vue'
+import { useRoute } from 'vue-router'
+import DxLoadPanel from 'devextreme-vue/load-panel'
+import DxPopup from 'devextreme-vue/popup'
+
+// ============================================
+// Vue 實例和路由
+// ============================================
+const route = useRoute()
+const { appContext } = getCurrentInstance()!
+
+// ============================================
+// 全域屬性
+// ============================================
+const appInfo = appContext.config.globalProperties.$appInfo
+
+// ============================================
+// 狀態變數
+// ============================================
+const loading = ref(false)
+const loadingMessage = ref('Loading...please Wait')
+const hasNewApp = ref(false)
+const downloadProgress = ref('')
+const isLargeScreen = ref(window.innerWidth > 960)
+const menuTitle = ref('Home Page')
+const pageKey = ref('')
+
+// 菜單項目（按位置分類）
+const oTop = ref<any[]>([])
+const oLeft = ref<any[]>([])
+const oCenter = ref<any[]>([])
+const oRight = ref<any[]>([])
+const oBottom = ref<any[]>([])
+
+// ============================================
+// Computed 屬性
+// ============================================
+// 計算欄位寬度
+const oLeftCol = computed(() => {
+  const hasCenter = oCenter.value.length > 0
+  const hasRight = oRight.value.length > 0
+  if (hasCenter && hasRight) return 'col-lg-4 col-md-12'
+  if (hasCenter || hasRight) return 'col-lg-6 col-md-12'
+  return 'col-12'
+})
+
+const oCenterCol = computed(() => {
+  const hasLeft = oLeft.value.length > 0
+  const hasRight = oRight.value.length > 0
+  if (hasLeft && hasRight) return 'col-lg-4 col-md-12'
+  if (hasLeft || hasRight) return 'col-lg-6 col-md-12'
+  return 'col-12'
+})
+
+const oRightCol = computed(() => {
+  const hasLeft = oLeft.value.length > 0
+  const hasCenter = oCenter.value.length > 0
+  if (hasLeft && hasCenter) return 'col-lg-4 col-md-12'
+  if (hasLeft || hasCenter) return 'col-lg-6 col-md-12'
+  return 'col-12'
+})
+
+// ============================================
+// 輔助函數
+// ============================================
+/**
+ * 獲取欄位標題（支持多語言）
+ */
+const getFieldCaption = (title: string, titleLang: string): string => {
+  // TODO: 實作多語言支援
+  // 目前先返回 title，之後可以根據 titleLang 和當前語言返回對應的文字
+  try {
+    if (titleLang) {
+      const langObj = JSON.parse(titleLang)
+      const currentLang = appInfo.language || 'zhTW'
+      return langObj[currentLang] || title
+    }
+  } catch (e) {
+    // 如果 JSON 解析失敗，返回原始 title
+  }
+  return title
+}
+
+/**
+ * 載入首頁菜單資料
+ */
+const loadMenuData = async () => {
+  loading.value = true
+  try {
+    // TODO: 實作從 API 載入菜單資料
+    // 目前使用模擬資料
+    
+    // 範例：從 route params 獲取頁面 GUID
+    const pageGuid = route.params.guid as string || appInfo.homeGuid
+    
+    // TODO: 呼叫 API 獲取菜單資料
+    // const response = await apiGet(`/api/cms/GetHomePageMenus?pageGuid=${pageGuid}`)
+    // const menuData = response.data
+    
+    // 暫時使用空陣列
+    oTop.value = []
+    oLeft.value = []
+    oCenter.value = []
+    oRight.value = []
+    oBottom.value = []
+    
+    console.log('📋 CMSHomePage: 載入菜單資料', { pageGuid })
+  } catch (error) {
+    console.error('❌ 載入菜單資料失敗:', error)
+  } finally {
+    loading.value = false
+  }
+}
+
+// ============================================
+// 生命週期
+// ============================================
+onMounted(() => {
+  // 設定 pageKey（用於組件間通訊）
+  pageKey.value = `homepage_${Date.now()}`
+  
+  // 載入菜單資料
+  loadMenuData()
+  
+  // 監聽視窗大小變化
+  window.addEventListener('resize', () => {
+    isLargeScreen.value = window.innerWidth > 960
+  })
+})
 </script>
 
 <style>

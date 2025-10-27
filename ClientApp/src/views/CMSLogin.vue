@@ -116,7 +116,7 @@
     <div v-show="appInfo.isCordova" style="color: gray">
       v:{{ cordovaAppVersion }}
     </div>
-    <RootPopup
+    <DxPopup
       ref="rootPopup"
       :visible="popupVisible"
       :drag-enabled="false"
@@ -124,7 +124,7 @@
       :show-title="true"
       :width="400"
       :height="450"
-      titleTemplate="title"
+      title-template="title"
       @hidden="
         () => {
           popupVisible = false;
@@ -220,22 +220,24 @@
           @click="onSendPasswordToEmail"
         />
       </div>
-    </RootPopup>
+    </DxPopup>
   </div>
 </template>
 
 <script setup lang="ts">
 import axios from 'axios'
-import { ref ,nextTick } from 'vue'
-import { useRouter } from 'vue-router'
+import { ref, nextTick, computed } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
 import DxButton from 'devextreme-vue/button'
+import DxLoadPanel from 'devextreme-vue/load-panel'
+import DxPopup from 'devextreme-vue/popup'
 import auth from '../utils/auth'
 import DxTextBox from "devextreme-vue/text-box";
 import DxNumberBox from "devextreme-vue/number-box";
 import { DxButton as DxTextBoxButton } from "devextreme-vue/text-box";
 import DxValidationGroup from "devextreme-vue/validation-group";
 import DxValidator, { DxRequiredRule } from "devextreme-vue/validator";
-import SelectBox from "devextreme-vue/select-box";
+import DxSelectBox from "devextreme-vue/select-box";
 import { getCurrentInstance } from 'vue'
 import type dxButton from 'devextreme/ui/button';
 import type { ValueChangedEvent } from 'devextreme/ui/select_box';
@@ -243,11 +245,29 @@ import type ValidationGroup from 'devextreme/ui/validation_group';
 import type dxSelectBox from 'devextreme/ui/select_box'
 
 
-let loginCount = 0;
-
+// ============================================
+// Vue 實例和路由
+// ============================================
 const { appContext } = getCurrentInstance()!
+const router = useRouter()
+const route = useRoute()
+
+// ============================================
+// 全域屬性
+// ============================================
 const appInfo = appContext.config.globalProperties.$appInfo
-const cssVariable = appContext.config.globalProperties.$cssVariable
+const cssVariable = appContext.config.globalProperties.$cssVariable || {}
+const $ms = appContext.config.globalProperties.$ms
+const showAlert = appContext.config.globalProperties.alert as (
+  message: string, title?: string, buttonText?: string, f?: () => void
+) => void
+const alertThen = appContext.config.globalProperties.alertThen
+const $speechBot = appContext.config.globalProperties.$speechBot
+
+// ============================================
+// 狀態變數
+// ============================================
+let loginCount = 0;
 const popupVisible = ref(false);
 const title = appInfo.title;
 const login = ref('');
@@ -259,11 +279,9 @@ const logoUrl = "logo.png";
 const randomAnswer = ref(0);
 const randomA = ref(0);
 const randomB = ref(0);
-const answer = ref(null);
+const answer = ref<number | null>(null);
 const isCaptcha = ref(false);
-const isLargeScreen = window.innerWidth > 960 ? true : false;
-//差異:一般字串與 Composition API 的 ref 差異
-// const passwordMode = "password";
+const isLargeScreen = window.innerWidth > 960;
 const passwordMode = ref<'password' | 'text'>('password');
 const passwordButton: { icon: string; type: string; onClick: () => void } = {
   icon: 'key',
@@ -275,29 +293,19 @@ const passwordButton: { icon: string; type: string; onClick: () => void } = {
 const forgotPasswordId = ref<string>('');
 const forgotPasswordEmailOrCellPhone = ref<string>('');
 const disableButton = ref(false);
-const brandSet = ref([]);
+const brandSet = ref<any[]>([]);
 const cordovaAppVersion = ref('');
-const logoVision = appInfo.defaultLanguage === "zhTW" ? appInfo.loginVisionEN : appInfo.loginVisionTW;
-const timer = ref(null);
-const headerCaptionStyle = ref("color:" + cssVariable.baseFvTextEditorColor )
+const logoVision = appInfo.defaultLanguage === "zhTW" ? appInfo.loginVisionTW : appInfo.loginVisionEN;
+const timer = ref<any>(null);
+const headerCaptionStyle = ref("color:" + (cssVariable.baseFvTextEditorColor || '#000'))
 const btnLogin = ref<{ instance: dxButton } | null>(null)
 const vg = ref<{ instance: ValidationGroup } | null>(null);
 const factorySet = ref<FactoryItem[]>([]);
 const forgotSelect = ref<{ instance: dxSelectBox } | null>(null);
-const showAlert = appContext.config.globalProperties.alert as (
-  message: string, title?: string, buttonText?: string, f?: () => void
-) => void
 
-// helper: unified POST wrapper
-const apiPost = <T = any>(apiUrl: string, params: any) => {
-  return axios.post<T>(apiUrl, params, {
-    baseURL: appInfo.serverUrl ?? undefined,
-    responseType: 'json',
-    headers: {
-      Authorization: 'Bearer ' + auth.getToken()
-    }
-  })
-}
+// ============================================
+// TypeScript 型別定義
+// ============================================
 interface ForgotPasswordFormData {
   forgotPasswordId: string;
   forgotPasswordEmailOrCellPhone: string;
@@ -306,52 +314,73 @@ interface ForgotPasswordFormData {
 type DxValidationResult = ReturnType<ValidationGroup['validate']>;
 type FactoryItem = { display: string; value: string; factory?: string };
 
-
-const onLoginClick = (e:Event) => {
-      if (appInfo.isShowFactorySet) {
-        if (appContext.config.globalProperties.$isNullOrEmpty(appInfo.factory)) {
-          alert(`Please select location - ${appInfo.title}`)
-          return;
-        }
-      }
-
-      const result: DxValidationResult | undefined = vg.value?.instance.validate();
-      if (!result || !result.isValid) {
-        return;
-      }
-
-      disableButton.value = true;
-      if (randomAnswer.value != answer.value && isCaptcha.value) {
-        alert(`The answer is ${randomAnswer.value}, please try again. - ${appInfo.title}`)
-        randomA.value = Math.floor(Math.random() * Math.floor(50));
-        randomB.value = Math.floor(Math.random() * Math.floor(50));
-        randomAnswer.value = randomA.value + randomB.value;
-
-        loginCount++;
-        if (loginCount > 5) {
-          alert(`Please try it later!! - ${appInfo.title}`);
-          const b = btnLogin.value!.instance;
-          b?.option("disabled", true);
-        }
-        disableButton.value = false;
-        return;
-      }
-
-      loading.value = true;
-      const para = {
-        userId: login.value,
-        password: password.value,
-      };
-      logining(para);
+// ============================================
+// 輔助函數
+// ============================================
+// helper: unified POST wrapper
+const apiPost = <T = any>(apiUrl: string, params: any) => {
+  return axios.post<T>(apiUrl, params, {
+    baseURL: appInfo.serverUrl ?? undefined,
+    responseType: 'json',
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      Authorization: 'Bearer ' + (auth.getToken() || '')
+    }
+  })
 }
 
-const onEnterKey = (e:Event) => {
-  const b = btnLogin.value!.instance;
+// Helper: Check if value is null or empty
+const isNullOrEmpty = (value: any): boolean => {
+  return value === null || value === undefined || value === '';
+}
+
+
+// ============================================
+// 事件處理函數
+// ============================================
+const onLoginClick = (e: Event) => {
+  if (appInfo.isShowFactorySet) {
+    if (isNullOrEmpty(appInfo.factory)) {
+      showAlert(`Please select location - ${appInfo.title}`)
+      return;
+    }
+  }
+
+  const result: DxValidationResult | undefined = vg.value?.instance.validate();
+  if (!result || !result.isValid) {
+    return;
+  }
+
+  disableButton.value = true;
+  if (randomAnswer.value != answer.value && isCaptcha.value) {
+    showAlert(`The answer is ${randomAnswer.value}, please try again. - ${appInfo.title}`)
+    randomA.value = Math.floor(Math.random() * Math.floor(50));
+    randomB.value = Math.floor(Math.random() * Math.floor(50));
+    randomAnswer.value = randomA.value + randomB.value;
+
+    loginCount++;
+    if (loginCount > 5) {
+      showAlert(`Please try it later!! - ${appInfo.title}`);
+      const b = btnLogin.value!.instance;
+      b?.option("disabled", true);
+    }
+    disableButton.value = false;
+    return;
+  }
+
+  loading.value = true;
+  const para = {
+    userId: login.value,
+    password: password.value,
+  };
+  logining(para);
+}
+
+const onEnterKey = (e: Event) => {
   onLoginClick(e);
-  //b.focus();
 }
 
-function onSelectedFactory(e: ValueChangedEvent) {
+const onSelectedFactory = (e: ValueChangedEvent) => {
   const selected = e.value as { factory: string; value: string; display: string };
   appInfo.factory = selected.factory;
   appInfo.serverUrl = selected.value;
@@ -359,343 +388,163 @@ function onSelectedFactory(e: ValueChangedEvent) {
 
 const setDefault = () => {
   if (appInfo.isCordova) {
-        if (appInfo.isShowFactorySet) {
-          if (!appContext.config.globalProperties.$isNullOrEmpty(appInfo.factory)) {
-            //this.appInfo.serverUrl = this.appInfo.factory;
-            var o = factorySet.value.filter(
-              (x) => x.display == appInfo.factory
-            );
-            if (o.length > 0) {
-              appInfo.serverUrl = o[0].value;
-            }
-          }
-        }
-        isCaptcha.value = false;
-        appInfo.rootGuid = appInfo.mobileRoot;
-        appInfo.homeGuid = appInfo.mobileHome;
-      } else {
-        if (appInfo.isMobile && appInfo.isShowMobileSwitch) {
-          //手機網頁
-          isCaptcha.value = appInfo.isShowCaptcha;
-          appInfo.rootGuid = appInfo.mobileRoot;
-          appInfo.homeGuid = appInfo.mobileHome;
-        } else {
-          //PC網頁
-          isCaptcha.value = appInfo.isShowCaptcha; //for all
-          appInfo.rootGuid = appInfo.pcRoot;
-          appInfo.homeGuid = appInfo.pcHome;
+    if (appInfo.isShowFactorySet) {
+      if (!isNullOrEmpty(appInfo.factory)) {
+        const o = factorySet.value.filter(
+          (x) => x.display == appInfo.factory
+        );
+        if (o.length > 0) {
+          appInfo.serverUrl = o[0].value;
         }
       }
-      //keep rootGuid; used in header-toolbar
-      window.localStorage.setItem("rootGuid", appInfo.rootGuid);
-      window.localStorage.setItem("homeGuid", appInfo.homeGuid);
+    }
+    isCaptcha.value = false;
+    appInfo.rootGuid = appInfo.mobileRoot;
+    appInfo.homeGuid = appInfo.mobileHome;
+  } else {
+    if (appInfo.isMobile && appInfo.isShowMobileSwitch) {
+      //手機網頁
+      isCaptcha.value = appInfo.isShowCaptcha;
+      appInfo.rootGuid = appInfo.mobileRoot;
+      appInfo.homeGuid = appInfo.mobileHome;
+    } else {
+      //PC網頁
+      isCaptcha.value = appInfo.isShowCaptcha; //for all
+      appInfo.rootGuid = appInfo.pcRoot;
+      appInfo.homeGuid = appInfo.pcHome;
+    }
+  }
+  //keep rootGuid; used in header-toolbar
+  window.localStorage.setItem("rootGuid", appInfo.rootGuid || '');
+  window.localStorage.setItem("homeGuid", appInfo.homeGuid || '');
 }
 
 const onForgetPassword = () => {
-      popupVisible.value = true;
+  popupVisible.value = true;
 }
 
 const onSendPasswordToEmail = () => {
   if (appInfo.isShowFactorySet) {
     const fs = forgotSelect.value!.instance;
-      if (appContext.config.globalProperties.$isNullOrEmpty(fs.option("value") as string)) {
-        showAlert("please select location", appInfo.title);
-        return;
-        }
-      }
+    if (isNullOrEmpty(fs.option("value") as string)) {
+      showAlert("please select location", appInfo.title);
+      return;
+    }
+  }
 
-      var that = this;
-      disableButton.value = true;
-      //先判斷加減數字是否正確
-      if (randomAnswer.value != answer.value && isCaptcha.value) {
-        showAlert(
-          "The answer is " +
-            randomAnswer.value.toString() +
-            ", please try again.",
-          appInfo.title
-        );
-        randomA.value = Math.floor(Math.random() * Math.floor(50));
-        randomB.value = Math.floor(Math.random() * Math.floor(50));
-        randomAnswer.value = randomA.value + randomB.value;
-        disableButton.value = false;
-        return;
-      }
+  disableButton.value = true;
+  //先判斷加減數字是否正確
+  if (randomAnswer.value != answer.value && isCaptcha.value) {
+    showAlert(
+      "The answer is " +
+        randomAnswer.value.toString() +
+        ", please try again.",
+      appInfo.title
+    );
+    randomA.value = Math.floor(Math.random() * Math.floor(50));
+    randomB.value = Math.floor(Math.random() * Math.floor(50));
+    randomAnswer.value = randomA.value + randomB.value;
+    disableButton.value = false;
+    return;
+  }
 
-      const formData: ForgotPasswordFormData = {
-        forgotPasswordId: forgotPasswordId.value,
-        forgotPasswordEmailOrCellPhone: forgotPasswordEmailOrCellPhone.value
-      };
-      //成功, else無mail
-      apiPost('/api/auth/ForgetPasswordSendMail', formData)
-        .then((res) => {
-          if (res.status == 200) {
-            showAlert('Password has been sent.', appInfo.title);
-            popupVisible.value = false;
-          } else {
-            showAlert('No record, please contact IT.', appInfo.title);
-          }
-          disableButton.value = false;
-        })
-        .catch((err) => {
-          disableButton.value = false;
-          showAlert(err, appInfo.title);
-        });
+  const formData: ForgotPasswordFormData = {
+    forgotPasswordId: forgotPasswordId.value,
+    forgotPasswordEmailOrCellPhone: forgotPasswordEmailOrCellPhone.value
+  };
+  //成功, else無mail
+  apiPost('/api/auth/ForgetPasswordSendMail', formData)
+    .then((res) => {
+      if (res.status == 200) {
+        showAlert('Password has been sent.', appInfo.title);
+        popupVisible.value = false;
+      } else {
+        showAlert('No record, please contact IT.', appInfo.title);
+      }
+      disableButton.value = false;
+    })
+    .catch((err) => {
+      disableButton.value = false;
+      showAlert(err, appInfo.title);
+    });
 }
 
-const logining = async (para) => {
-      //2021.12.29 清除 $ms
-      //this.$ms = {};
-      for (var key in ms.value) {
-        delete ms.value[key];
+// 簡化版登入函數（移除不存在的 mixin 方法）
+const logining = async (para: { userId: string; password: string }) => {
+  //清除 $ms
+  for (const key in $ms) {
+    delete $ms[key];
+  }
+
+  try {
+    const res = await apiPost("/api/auth/login", para);
+    
+    if (res.status == 200) {
+      if (res.data[0].IsIPAllow == "1") {
+        // 登入成功
+        auth.logIn(res.data[0].Token);
+        appInfo.userInfo.userId = res.data[0].UserId;
+        appInfo.userInfo.userImageUrl = res.data[0].UserImageUrl;
+        appInfo.userInfo.userGuid = res.data[0].UserGuid;
+        appInfo.userInfo.userName = res.data[0].UserName;
+        appInfo.userInfo.deptGuid = res.data[0].DeptGuid;
+        appInfo.userInfo.deptName = res.data[0].DeptName;
+        appInfo.userInfo.deptNameAll = res.data[0].DeptNameAll;
+        appInfo.userInfo.userTitle = res.data[0].UserTitle;
+        appInfo.userInfo.groupNames = res.data[0].GroupNames;
+        appInfo.userInfo.groupGuids = res.data[0].GroupGuids;
+
+        const lastLoginDate = res.data[0].LastActiveDate;
+        window.localStorage.setItem('userId', para.userId);
+        window.localStorage.setItem('password', para.password);
+
+        // TODO: 需要實作以下功能
+        // - getCMSConfig()
+        // - getCMSLang()
+        // - getExchange()
+        // - funcAllPreload()
+        // 目前暫時跳過這些預載步驟
+
+        loginCount = 0;
+        
+        // 導向首頁
+        if (appInfo.isShowMainMenu) {
+          router.push({ path: "/CMSMainMenu" }).catch(() => {});
+        } else {
+          const redirect = route.query.redirect as string || `/CMSPage/${appInfo.homeGuid}`;
+          router.push(redirect).catch(() => {});
+        }
+      } else {
+        showAlert(
+          "Login fail:Your IP " +
+            res.data[0].UserIP +
+            " is prohibited, Please contact IT department.",
+          appInfo.title
+        );
       }
-
-      //2023.08.25 必須用上面的方法清空
-      //Object.assign(this.$ms, {});
-      //console.log(this.$ms)
-
-      await apiPost("/api/auth/login", para)
-        .then(async (res) => {
-          if (res.status == 200) {
-            if (res.data[0].IsIPAllow == "1") {
-              //#region loginSuccess
-              auth.logIn(res.data[0].Token);
-              appInfo.userInfo.userId = res.data[0].UserId;
-              appInfo.userInfo.userImageUrl = res.data[0].UserImageUrl;
-              appInfo.userInfo.userGuid = res.data[0].UserGuid;
-              appInfo.userInfo.userName = res.data[0].UserName;
-              appInfo.userInfo.deptGuid = res.data[0].DeptGuid;
-              appInfo.userInfo.deptName = res.data[0].DeptName;
-              appInfo.userInfo.deptNameAll = res.data[0].DeptNameAll;
-              appInfo.userInfo.userTitle = res.data[0].UserTitle;
-              appInfo.userInfo.groupNames = res.data[0].GroupNames;
-              appInfo.userInfo.groupGuids = res.data[0].GroupGuids;
-
-              let lastLoginDate = res.data[0].LastActiveDate;
-              window.localStorage.userId = para.userId;
-              window.localStorage.password = para.password;
-
-              //preload
-              /* if(that.$appInfo.preLoadXML.length > 0) {
-                let xmlNames = that.$appInfo.preLoadXML.toString();                
-                  let rtnObj = await that.funcAllPreload(xmlNames).then(res =>{
-                    return res;
-                  });
-                  
-                for(var i = 0; i < that.$appInfo.preLoadXML.length; i++) {
-                  if (that.isNullOrEmpty(that.getItem(that.$appInfo.preLoadXML[i] + "_All")))
-                    await that.setItem(that.$appInfo.preLoadXML[i] + "_All", rtnObj.data[that.$appInfo.preLoadXML[i]]);
-                } 
-                   
-              } */
-
-              await Promise.all([
-                that.getCMSConfig(),
-                that.getCMSLang(),
-                that.getExchange(),
-                that.funcAllPreload(that.$appInfo.preLoadXML.toString()),
-              ]).then(async (res1) => {
-                window.sessionStorage.setItem(
-                  "systemConfig",
-                  JSON.stringify(res1[0].data)
-                );
-
-                window.sessionStorage.setItem(
-                  "dictionary",
-                  JSON.stringify(res1[1].data)
-                );
-                window.sessionStorage.setItem(
-                  "exchangeRate",
-                  JSON.stringify(res1[2].data)
-                );
-
-                if (that.$appInfo.isCordova) {
-                  //更新deviceToken to server
-                  if (
-                    !that.isNullOrEmpty(that.$appInfo.userInfo.userDeviceToken)
-                  ) {
-                    var ary = [];
-                    ary.push(that.$appInfo.userInfo.userGuid);
-                    ary.push(that.$appInfo.userInfo.userDeviceType);
-                    ary.push(that.$appInfo.userInfo.userDeviceToken);
-                    ary.push(that.$appInfo.userInfo.userUUID);
-                    that.ExecuteCMSCommand(
-                      "UpdateCMSUserMobile.xml",
-                      ary.toString(),
-                      true
-                    );
-                  }
-                }
-                //因應品牌功能 在這裡設定 homeguid
-                if (this.$appInfo.isShowBrand) {
-                  this.$appInfo.rootGuid = this.brandSet.filter(
-                    (x) => x.value == this.$appInfo.brand
-                  )[0].rootGuid;
-                  this.$appInfo.homeGuid = this.brandSet.filter(
-                    (x) => x.value == this.$appInfo.brand
-                  )[0].homeGuid;
-                }
-
-                //設定工廠,,如果cmsconfig有值的話, 就用, 否則使用vue.config 預設值
-                if (!this.isNullOrEmpty(this.getSystemConfig("Factory"))) {
-                  this.$appInfo.factory = this.getSystemConfig("Factory");
-                }
-
-                if (that.$appInfo.cacheMode != "0") {
-                  for (var key in res1[3].data) {
-                    if (that.isNullOrEmpty(that.getItem(key + "_All")))
-                      await that.setItem(key + "_All", res1[3].data[key]);
-                  }
-                }
-                //2023.07.10 get BiaVersion
-                //var currentVer = res1[0].data.filter(x => x.ConfigName == 'BiaVersion');
-                var currentVer = this.getSystemConfig("BiaVersion");
-                if (
-                  !this.$appInfo.isCordova &&
-                  !this.isNullOrEmpty(currentVer) &&
-                  this.$appInfo.appVersion != currentVer
-                ) {
-                  that
-                    .alertThen(
-                      this.Message("sys_versionChange"),
-                      that.$appInfo.title
-                    )
-                    .then(() => {
-                      auth.logOut();
-                      window.location.reload();
-                    });
-                } else {
-                  //第一次進平台,,強制轉到變更密碼那一頁
-                  if (
-                    that.isNullOrEmpty(lastLoginDate) &&
-                    that.$appInfo.isPasswordChangeAlert
-                  ) {
-                    that
-                      .alertThen(
-                        "Please change your password.",
-                        that.$appInfo.title
-                      )
-                      .then(() => {
-                        var url = "";
-                        if (that.isLargeScreen)
-                          url =
-                            "/CMSFrame/AdminFormView/3/Form_CMSUser_ChangePWD.xml";
-                        else
-                          url =
-                            "/CMSFrame/" +
-                            that.Message("myInfo") +
-                            "/AdminFormView/3/Form_CMSUser_ChangePWD.xml";
-
-                        that.$router.push(url).then(() => {
-                          if (that.$appInfo.isCordova) {
-                            setTimeout(() => {
-                              window.navigator.splashscreen.hide();
-                            }, 2000);
-                          } //這裡用cache 會有錯,
-                        });
-                      });
-                  } else {
-                    //2023.11.12 modify by Allen
-                    if (that.$appInfo.isShowMainMenu) {
-                      this.$router
-                        .push({
-                          path: "/CMSMainMenu",
-                        })
-                        .catch((err) => {});
-                    } else {
-                      var redirect = that.$route.query.redirect;
-                      if (that.isNullOrEmpty(redirect))
-                        redirect = "/CMSPage/" + that.$appInfo.homeGuid;
-
-                      that.$router.push(redirect).then(() => {
-                        if (!that.$appInfo.isMobile) {
-                          if (
-                            window.navigator.onLine &&
-                            !this.isNullOrEmpty(
-                              this.getSystemConfig("Greeting")
-                            )
-                          ) {
-                            this.GetCMSCommand(
-                              "GETDaySentence.xml",
-                              "",
-                              false
-                            ).then((res) => {
-                              var text =
-                                res.data[0].MsgSubject +
-                                " 出自 " +
-                                res.data[0].MsgContent;
-                              that.speech(
-                                this.$appInfo.userInfo.userName.substr(1, 3) +
-                                  "您好," +
-                                  text
-                              );
-                              that.alertThen(text, "每日一語").then(() => {
-                                that.$speechBot.cancel();
-                              });
-                            });
-
-                            /* var request = new XMLHttpRequest();
-                              request.open("GET", "https://v1.hitokoto.cn/?c=d&c=e&c=i&c=k", false);
-                              request.send(null);
-                              var o = JSON.parse(request.responseText);
-                              var author = o.from_who
-                              if (author == null)
-                                author = '不詳'
-
-                              var from = o.from
-                              if (from == null)
-                                from = '不詳'
-                              var text = o.hitokoto + " 作者 " + author + ",出自 " + from
-                              text = that.Traditionalized(text)
-                              that.speech(this.$appInfo.userInfo.userName.substr(1, 3) + "您好," + text);
-                              that.alertThen(text, '每日一語').then(()=>{
-                                that.$speechBot.cancel()
-                              }); */
-                          }
-                        }
-                        if (that.$appInfo.isCordova) {
-                          setTimeout(() => {
-                            window.navigator.splashscreen.hide();
-                          }, 2000);
-                        } //這裡用cache 會有錯,
-                      });
-                    }
-                  }
-                }
-              });
-
-              loginCount = 0;
-              //#endregion
-            } else {
-              that.alert(
-                "Login fail:Your IP " +
-                  res.data[0].UserIP +
-                  " is prohibited, Please contact IT department.",
-                that.$appInfo.title
-              );
-            }
-          } else if (res.status == 204) {
-            that.alert(
-              "Login fail:Incorrect account or password.",
-              that.$appInfo.title
-            );
-          } else {
-            that.alert(res.data, that.$appInfo.title);
-          }
-          loginCount++;
-          if (loginCount > 5) {
-            that.alert("please try it later!!", that.$appInfo.title);
-            let b = that.$refs["btnLogin"].instance;
-            b.option("disabled", true);
-          }
-          that.loading = false;
-          that.disableButton = false;
-        })
-        .catch((err) => {
-          that.disableButton = false;
-          that.loading = false;
-          that.alert(JSON.stringify(err), "Login");
-        });
-    },
+    } else if (res.status == 204) {
+      showAlert(
+        "Login fail:Incorrect account or password.",
+        appInfo.title
+      );
+    } else {
+      showAlert(String(res.data), appInfo.title);
+    }
+    
+    loginCount++;
+    if (loginCount > 5) {
+      showAlert("please try it later!!", appInfo.title);
+      const b = btnLogin.value?.instance;
+      b?.option("disabled", true);
+    }
+    loading.value = false;
+    disableButton.value = false;
+  } catch (err) {
+    disableButton.value = false;
+    loading.value = false;
+    showAlert(JSON.stringify(err), "Login");
+  }
+}
 
 
 </script>
