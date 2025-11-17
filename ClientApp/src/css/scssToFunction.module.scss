@@ -1,4 +1,5 @@
-@import "@/themes/bia-custom.scss";
+@use "@/themes/generated/variables.base.scss" as *;
+@use "@/themes/bia-custom.scss" as *;
 :export {
     baseAccent: $base-accent; //原色系
     baseTextColor: $base-text-color; //文字顏色

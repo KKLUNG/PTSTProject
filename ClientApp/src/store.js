@@ -1,11 +1,8 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-Vue.use(Vuex)
+import { createStore } from 'vuex'
 import { apiPost, apiGet } from '@/utils/api-util'
-import  appInfo  from '@/utils/app-info'
-//import biaUtil from "@/js/biaUtil";
+import appInfo from '@/utils/app-Info'
 
-const store = new Vuex.Store({
+export default createStore({
   state: {
     menus: [],
     icons: [],
@@ -118,4 +115,3 @@ const store = new Vuex.Store({
 
   }
 })
-export default store;

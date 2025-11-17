@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zCm3wkCVxkb0T5q2vCBLEVLcaatJUtr7pr3R3FWr1IE=",
+  "Hash": "ZNWHCiclf4tQZpu/9NS8m5E5WfoJ780ufaf0SD2fXMQ=",
   "Source": "PTSDProject",
   "BasePath": "_content/PTSDProject",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "PTSDProject\\wwwroot",
       "Source": "PTSDProject",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PTSDProject.styles.css",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PTSDProject.styles.css",
       "SourceId": "PTSDProject",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "PTSDProject#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "KrledAzPpVswDR3ij+4dWio0lFGRgqOBCTUPjDWO+P8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PTSDProject.styles.css"
+      "OriginalItemSpec": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PTSDProject.styles.css"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PTSDProject.bundle.scp.css",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PTSDProject.bundle.scp.css",
       "SourceId": "PTSDProject",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "PTSDProject#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,433 @@
       "Integrity": "KrledAzPpVswDR3ij+4dWio0lFGRgqOBCTUPjDWO+P8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PTSDProject.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PTSDProject.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\CMSLogin-CvBl3GRj.js",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/CMSLogin-CvBl3GRj#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7j1skwbk2t",
+      "Integrity": "w7pxUQXx5KBz5MusgbN9rNwS8VnQEb0dimDsyM45S1U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\CMSLogin-CvBl3GRj.js"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\CMSLogin-DARwkBp1.js",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/CMSLogin-DARwkBp1#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gynft9hvw4",
+      "Integrity": "CPjbLU2yOrxgAdb6qILjm3p+inoiGk9kKZGRDs/aeKI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\CMSLogin-DARwkBp1.js"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\dxiconsmaterial-CjTfgWpM.woff",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/dxiconsmaterial-CjTfgWpM#[.{fingerprint}]?.woff",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "59axzs2jj0",
+      "Integrity": "KYVC7alYRUN0ne2qN8/WoEpkKgdqdGFzQJkTwGcY3yY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\dxiconsmaterial-CjTfgWpM.woff"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\dxiconsmaterial-CmwasQT-.ttf",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/dxiconsmaterial-CmwasQT-#[.{fingerprint}]?.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "69y07upk1t",
+      "Integrity": "liNyRi5ruHySOa0r3GVD5+er5MK2H8Vql437XJDatLE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\dxiconsmaterial-CmwasQT-.ttf"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\dxiconsmaterial-f3q1YYkC.woff2",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/dxiconsmaterial-f3q1YYkC#[.{fingerprint}]?.woff2",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3wmyp8yuy7",
+      "Integrity": "YyG4oJWjpPFPMGpC+4HKYJ8sG/uwEZ3NVm2ep1e7j1I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\dxiconsmaterial-f3q1YYkC.woff2"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\index-CuXpr25K.css",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/index-CuXpr25K#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kmz1b9cz5l",
+      "Integrity": "nJn7u4UtcqpTUIizPkdDP5fsaWXo4Qd8UiZXZlbxhhI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\index-CuXpr25K.css"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\index-DfoQVOEc.js",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/index-DfoQVOEc#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hdfuylmrhi",
+      "Integrity": "VZ8h+VgL/z4FqLsAv76Z/Aelud3gS82sv7iGcqzVc6Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\index-DfoQVOEc.js"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\index-Q19B6nT1.js",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/index-Q19B6nT1#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n4qv29kjfx",
+      "Integrity": "+WOHk17Az7aAJt8X87fFJh+yqavvVo8E9hkBcDZ0MFQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\index-Q19B6nT1.js"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-300-Cu-PAxXt.woff",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/Roboto-300-Cu-PAxXt#[.{fingerprint}]?.woff",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sjic1lwam1",
+      "Integrity": "GIJzScf+vUuNAaqQfGfqm4ARJCB4MmskcDl4RU/fNRo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Roboto-300-Cu-PAxXt.woff"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-300-DHTugVNA.woff2",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/Roboto-300-DHTugVNA#[.{fingerprint}]?.woff2",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "t4n4t55al1",
+      "Integrity": "HY9SgK+39PoNtc38t1HhgHiLDw2hSIMJxCQ+v/EalZE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Roboto-300-DHTugVNA.woff2"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-300-Dwz7nuwl.ttf",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/Roboto-300-Dwz7nuwl#[.{fingerprint}]?.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iigzmab4q3",
+      "Integrity": "ptND1CW8ONuQFS+gYFixxzkeypJk8zTvZcHOF1CFxvY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Roboto-300-Dwz7nuwl.ttf"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-400-BX5l9hRW.woff",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/Roboto-400-BX5l9hRW#[.{fingerprint}]?.woff",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6hv1gdbmmb",
+      "Integrity": "munWVF19fYI/ipQBDbd8Gg/3Hjcei7FY3xy5g5UWJQc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Roboto-400-BX5l9hRW.woff"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-400-C6rbFxYz.woff2",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/Roboto-400-C6rbFxYz#[.{fingerprint}]?.woff2",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h652ldmq0e",
+      "Integrity": "RxB0AdCts3WrmqFn+dYkiahJ1RDnQKMHtaTbYOXbNWI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Roboto-400-C6rbFxYz.woff2"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-400-CmjnF39D.ttf",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/Roboto-400-CmjnF39D#[.{fingerprint}]?.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ltpnafio4i",
+      "Integrity": "eehRQEZX2sIQaz0irSVtR4JKmldlRY7bcskQKkWBbZU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Roboto-400-CmjnF39D.ttf"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-500-b81vv18W.woff",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/Roboto-500-b81vv18W#[.{fingerprint}]?.woff",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fw34hk0msl",
+      "Integrity": "QRL7yZahC6L1viB3+Svl6xQ+JAYaJPfJmCUGbsxbilE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Roboto-500-b81vv18W.woff"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-500-ByKogCTi.woff2",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/Roboto-500-ByKogCTi#[.{fingerprint}]?.woff2",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uzum3plqj6",
+      "Integrity": "lgJf6dtleNi8f0uL5zl1CxSQ4HIhwrHxas3i6nZpzt8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Roboto-500-ByKogCTi.woff2"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-500-BzTpVR6v.ttf",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/Roboto-500-BzTpVR6v#[.{fingerprint}]?.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yovuensvro",
+      "Integrity": "8gXMURgh6lYHihBVV/zqYlMSlATUEcmX4YZvvQBqu2g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Roboto-500-BzTpVR6v.ttf"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-700-0vjaqapF.ttf",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/Roboto-700-0vjaqapF#[.{fingerprint}]?.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zga6qsrug3",
+      "Integrity": "fQuZHuPgvnrwGtfqjNK+6mwAol5nmgImtnN/B5qv/4Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Roboto-700-0vjaqapF.ttf"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-700-D9plYbeK.woff",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/Roboto-700-D9plYbeK#[.{fingerprint}]?.woff",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1gv6u1lnem",
+      "Integrity": "sXZ6DD5d+zpQCe/uREX/FdY2LpKFRh4Xve0Ybx6UVvA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Roboto-700-D9plYbeK.woff"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-700-hN3duQhD.woff2",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "assets/Roboto-700-hN3duQhD#[.{fingerprint}]?.woff2",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "a1q7d2pnny",
+      "Integrity": "jkQ3a3NdzJAnrLzIoN9kw/iGojUp7/J7Ai80TXGekPI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Roboto-700-hN3duQhD.woff2"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\css\\site.css",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -80,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\favicon.ico",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -101,10 +521,94 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\images\\heroBackground.png",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "images/heroBackground#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "94jrfneoz3",
+      "Integrity": "d1v/7TDrfuGWMY1ek2PlAntZsXXnB7mSrW3vJScqzRs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\heroBackground.png"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\images\\heroBackground1.png",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "images/heroBackground1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1hzndi7z3t",
+      "Integrity": "qwevh4BgQuyZ4NExgn7NcrQXbwxaNkS71REzM3KPUTM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\heroBackground1.png"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\images\\heroBackground2.png",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "images/heroBackground2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ppnela23qe",
+      "Integrity": "jewJAVA4opsx1uJV0H/6ffXukrd9P0h4uW6nhmGLEHg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\heroBackground2.png"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\index.html",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "BasePath": "_content/PTSDProject",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zhf6q24x7s",
+      "Integrity": "CUqSWwYRDfOcNWqG2ENy+CrzVA0tWNl62HuQoZCMAkg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\js\\site.js",
+      "SourceId": "PTSDProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -122,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -143,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -164,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -185,10 +689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -206,10 +710,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -227,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -248,10 +752,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -269,10 +773,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -290,10 +794,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -311,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -332,10 +836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -353,10 +857,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -374,10 +878,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -395,10 +899,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -416,10 +920,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -437,10 +941,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -458,10 +962,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -479,10 +983,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -500,10 +1004,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -521,10 +1025,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -542,10 +1046,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -563,10 +1067,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -584,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -605,10 +1109,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -626,10 +1130,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -647,10 +1151,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -668,10 +1172,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -689,10 +1193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -710,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -731,10 +1235,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -752,10 +1256,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -773,10 +1277,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -794,10 +1298,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -815,10 +1319,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -836,10 +1340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -857,10 +1361,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -878,10 +1382,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -899,10 +1403,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -920,10 +1424,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -941,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -962,10 +1466,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -983,10 +1487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1004,10 +1508,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1025,10 +1529,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1046,10 +1550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -1067,10 +1571,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1088,10 +1592,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1109,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1130,10 +1634,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1151,10 +1655,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1172,10 +1676,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1193,10 +1697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1214,10 +1718,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1235,10 +1739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -1256,10 +1760,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1277,10 +1781,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1298,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "PTSDProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\",
+      "ContentRoot": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\",
       "BasePath": "_content/PTSDProject",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1321,8 +1825,1648 @@
   ],
   "Endpoints": [
     {
+      "Route": "assets/CMSLogin-CvBl3GRj.7j1skwbk2t.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\CMSLogin-CvBl3GRj.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w7pxUQXx5KBz5MusgbN9rNwS8VnQEb0dimDsyM45S1U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:03:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7j1skwbk2t"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/CMSLogin-CvBl3GRj.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-w7pxUQXx5KBz5MusgbN9rNwS8VnQEb0dimDsyM45S1U="
+        }
+      ]
+    },
+    {
+      "Route": "assets/CMSLogin-CvBl3GRj.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\CMSLogin-CvBl3GRj.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w7pxUQXx5KBz5MusgbN9rNwS8VnQEb0dimDsyM45S1U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:03:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-w7pxUQXx5KBz5MusgbN9rNwS8VnQEb0dimDsyM45S1U="
+        }
+      ]
+    },
+    {
+      "Route": "assets/CMSLogin-DARwkBp1.gynft9hvw4.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\CMSLogin-DARwkBp1.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CPjbLU2yOrxgAdb6qILjm3p+inoiGk9kKZGRDs/aeKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gynft9hvw4"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/CMSLogin-DARwkBp1.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CPjbLU2yOrxgAdb6qILjm3p+inoiGk9kKZGRDs/aeKI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/CMSLogin-DARwkBp1.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\CMSLogin-DARwkBp1.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CPjbLU2yOrxgAdb6qILjm3p+inoiGk9kKZGRDs/aeKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CPjbLU2yOrxgAdb6qILjm3p+inoiGk9kKZGRDs/aeKI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/dxiconsmaterial-CjTfgWpM.59axzs2jj0.woff",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\dxiconsmaterial-CjTfgWpM.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33836"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KYVC7alYRUN0ne2qN8/WoEpkKgdqdGFzQJkTwGcY3yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "59axzs2jj0"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/dxiconsmaterial-CjTfgWpM.woff"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KYVC7alYRUN0ne2qN8/WoEpkKgdqdGFzQJkTwGcY3yY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/dxiconsmaterial-CjTfgWpM.woff",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\dxiconsmaterial-CjTfgWpM.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33836"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KYVC7alYRUN0ne2qN8/WoEpkKgdqdGFzQJkTwGcY3yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KYVC7alYRUN0ne2qN8/WoEpkKgdqdGFzQJkTwGcY3yY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/dxiconsmaterial-CmwasQT-.69y07upk1t.ttf",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\dxiconsmaterial-CmwasQT-.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33760"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"liNyRi5ruHySOa0r3GVD5+er5MK2H8Vql437XJDatLE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "69y07upk1t"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/dxiconsmaterial-CmwasQT-.ttf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-liNyRi5ruHySOa0r3GVD5+er5MK2H8Vql437XJDatLE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/dxiconsmaterial-CmwasQT-.ttf",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\dxiconsmaterial-CmwasQT-.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33760"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"liNyRi5ruHySOa0r3GVD5+er5MK2H8Vql437XJDatLE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-liNyRi5ruHySOa0r3GVD5+er5MK2H8Vql437XJDatLE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/dxiconsmaterial-f3q1YYkC.3wmyp8yuy7.woff2",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\dxiconsmaterial-f3q1YYkC.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YyG4oJWjpPFPMGpC+4HKYJ8sG/uwEZ3NVm2ep1e7j1I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3wmyp8yuy7"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/dxiconsmaterial-f3q1YYkC.woff2"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YyG4oJWjpPFPMGpC+4HKYJ8sG/uwEZ3NVm2ep1e7j1I="
+        }
+      ]
+    },
+    {
+      "Route": "assets/dxiconsmaterial-f3q1YYkC.woff2",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\dxiconsmaterial-f3q1YYkC.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YyG4oJWjpPFPMGpC+4HKYJ8sG/uwEZ3NVm2ep1e7j1I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YyG4oJWjpPFPMGpC+4HKYJ8sG/uwEZ3NVm2ep1e7j1I="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-CuXpr25K.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\index-CuXpr25K.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1446967"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nJn7u4UtcqpTUIizPkdDP5fsaWXo4Qd8UiZXZlbxhhI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nJn7u4UtcqpTUIizPkdDP5fsaWXo4Qd8UiZXZlbxhhI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-CuXpr25K.kmz1b9cz5l.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\index-CuXpr25K.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1446967"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nJn7u4UtcqpTUIizPkdDP5fsaWXo4Qd8UiZXZlbxhhI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kmz1b9cz5l"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/index-CuXpr25K.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nJn7u4UtcqpTUIizPkdDP5fsaWXo4Qd8UiZXZlbxhhI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-DfoQVOEc.hdfuylmrhi.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\index-DfoQVOEc.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1074472"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VZ8h+VgL/z4FqLsAv76Z/Aelud3gS82sv7iGcqzVc6Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:03:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hdfuylmrhi"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/index-DfoQVOEc.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VZ8h+VgL/z4FqLsAv76Z/Aelud3gS82sv7iGcqzVc6Q="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-DfoQVOEc.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\index-DfoQVOEc.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1074472"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VZ8h+VgL/z4FqLsAv76Z/Aelud3gS82sv7iGcqzVc6Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:03:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VZ8h+VgL/z4FqLsAv76Z/Aelud3gS82sv7iGcqzVc6Q="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-Q19B6nT1.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\index-Q19B6nT1.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1074711"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+WOHk17Az7aAJt8X87fFJh+yqavvVo8E9hkBcDZ0MFQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+WOHk17Az7aAJt8X87fFJh+yqavvVo8E9hkBcDZ0MFQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-Q19B6nT1.n4qv29kjfx.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\index-Q19B6nT1.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1074711"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+WOHk17Az7aAJt8X87fFJh+yqavvVo8E9hkBcDZ0MFQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n4qv29kjfx"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/index-Q19B6nT1.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+WOHk17Az7aAJt8X87fFJh+yqavvVo8E9hkBcDZ0MFQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-300-Cu-PAxXt.sjic1lwam1.woff",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-300-Cu-PAxXt.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85692"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GIJzScf+vUuNAaqQfGfqm4ARJCB4MmskcDl4RU/fNRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sjic1lwam1"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/Roboto-300-Cu-PAxXt.woff"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GIJzScf+vUuNAaqQfGfqm4ARJCB4MmskcDl4RU/fNRo="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-300-Cu-PAxXt.woff",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-300-Cu-PAxXt.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85692"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GIJzScf+vUuNAaqQfGfqm4ARJCB4MmskcDl4RU/fNRo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GIJzScf+vUuNAaqQfGfqm4ARJCB4MmskcDl4RU/fNRo="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-300-DHTugVNA.t4n4t55al1.woff2",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-300-DHTugVNA.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64320"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HY9SgK+39PoNtc38t1HhgHiLDw2hSIMJxCQ+v/EalZE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t4n4t55al1"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/Roboto-300-DHTugVNA.woff2"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HY9SgK+39PoNtc38t1HhgHiLDw2hSIMJxCQ+v/EalZE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-300-DHTugVNA.woff2",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-300-DHTugVNA.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64320"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HY9SgK+39PoNtc38t1HhgHiLDw2hSIMJxCQ+v/EalZE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HY9SgK+39PoNtc38t1HhgHiLDw2hSIMJxCQ+v/EalZE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-300-Dwz7nuwl.iigzmab4q3.ttf",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-300-Dwz7nuwl.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ptND1CW8ONuQFS+gYFixxzkeypJk8zTvZcHOF1CFxvY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iigzmab4q3"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/Roboto-300-Dwz7nuwl.ttf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ptND1CW8ONuQFS+gYFixxzkeypJk8zTvZcHOF1CFxvY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-300-Dwz7nuwl.ttf",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-300-Dwz7nuwl.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ptND1CW8ONuQFS+gYFixxzkeypJk8zTvZcHOF1CFxvY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ptND1CW8ONuQFS+gYFixxzkeypJk8zTvZcHOF1CFxvY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-400-BX5l9hRW.6hv1gdbmmb.woff",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-400-BX5l9hRW.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85876"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"munWVF19fYI/ipQBDbd8Gg/3Hjcei7FY3xy5g5UWJQc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6hv1gdbmmb"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/Roboto-400-BX5l9hRW.woff"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-munWVF19fYI/ipQBDbd8Gg/3Hjcei7FY3xy5g5UWJQc="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-400-BX5l9hRW.woff",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-400-BX5l9hRW.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85876"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"munWVF19fYI/ipQBDbd8Gg/3Hjcei7FY3xy5g5UWJQc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-munWVF19fYI/ipQBDbd8Gg/3Hjcei7FY3xy5g5UWJQc="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-400-C6rbFxYz.h652ldmq0e.woff2",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-400-C6rbFxYz.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64632"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RxB0AdCts3WrmqFn+dYkiahJ1RDnQKMHtaTbYOXbNWI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h652ldmq0e"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/Roboto-400-C6rbFxYz.woff2"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RxB0AdCts3WrmqFn+dYkiahJ1RDnQKMHtaTbYOXbNWI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-400-C6rbFxYz.woff2",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-400-C6rbFxYz.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64632"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RxB0AdCts3WrmqFn+dYkiahJ1RDnQKMHtaTbYOXbNWI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RxB0AdCts3WrmqFn+dYkiahJ1RDnQKMHtaTbYOXbNWI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-400-CmjnF39D.ltpnafio4i.ttf",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-400-CmjnF39D.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "171676"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eehRQEZX2sIQaz0irSVtR4JKmldlRY7bcskQKkWBbZU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ltpnafio4i"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/Roboto-400-CmjnF39D.ttf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eehRQEZX2sIQaz0irSVtR4JKmldlRY7bcskQKkWBbZU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-400-CmjnF39D.ttf",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-400-CmjnF39D.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "171676"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eehRQEZX2sIQaz0irSVtR4JKmldlRY7bcskQKkWBbZU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eehRQEZX2sIQaz0irSVtR4JKmldlRY7bcskQKkWBbZU="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-500-b81vv18W.fw34hk0msl.woff",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-500-b81vv18W.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86444"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QRL7yZahC6L1viB3+Svl6xQ+JAYaJPfJmCUGbsxbilE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fw34hk0msl"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/Roboto-500-b81vv18W.woff"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QRL7yZahC6L1viB3+Svl6xQ+JAYaJPfJmCUGbsxbilE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-500-b81vv18W.woff",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-500-b81vv18W.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86444"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QRL7yZahC6L1viB3+Svl6xQ+JAYaJPfJmCUGbsxbilE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QRL7yZahC6L1viB3+Svl6xQ+JAYaJPfJmCUGbsxbilE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-500-ByKogCTi.uzum3plqj6.woff2",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-500-ByKogCTi.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65484"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lgJf6dtleNi8f0uL5zl1CxSQ4HIhwrHxas3i6nZpzt8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uzum3plqj6"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/Roboto-500-ByKogCTi.woff2"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lgJf6dtleNi8f0uL5zl1CxSQ4HIhwrHxas3i6nZpzt8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-500-ByKogCTi.woff2",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-500-ByKogCTi.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65484"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lgJf6dtleNi8f0uL5zl1CxSQ4HIhwrHxas3i6nZpzt8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lgJf6dtleNi8f0uL5zl1CxSQ4HIhwrHxas3i6nZpzt8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-500-BzTpVR6v.ttf",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-500-BzTpVR6v.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "172064"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8gXMURgh6lYHihBVV/zqYlMSlATUEcmX4YZvvQBqu2g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8gXMURgh6lYHihBVV/zqYlMSlATUEcmX4YZvvQBqu2g="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-500-BzTpVR6v.yovuensvro.ttf",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-500-BzTpVR6v.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "172064"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8gXMURgh6lYHihBVV/zqYlMSlATUEcmX4YZvvQBqu2g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yovuensvro"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/Roboto-500-BzTpVR6v.ttf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8gXMURgh6lYHihBVV/zqYlMSlATUEcmX4YZvvQBqu2g="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-700-0vjaqapF.ttf",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-700-0vjaqapF.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170760"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fQuZHuPgvnrwGtfqjNK+6mwAol5nmgImtnN/B5qv/4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fQuZHuPgvnrwGtfqjNK+6mwAol5nmgImtnN/B5qv/4Y="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-700-0vjaqapF.zga6qsrug3.ttf",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-700-0vjaqapF.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170760"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fQuZHuPgvnrwGtfqjNK+6mwAol5nmgImtnN/B5qv/4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zga6qsrug3"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/Roboto-700-0vjaqapF.ttf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fQuZHuPgvnrwGtfqjNK+6mwAol5nmgImtnN/B5qv/4Y="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-700-D9plYbeK.1gv6u1lnem.woff",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-700-D9plYbeK.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sXZ6DD5d+zpQCe/uREX/FdY2LpKFRh4Xve0Ybx6UVvA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1gv6u1lnem"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/Roboto-700-D9plYbeK.woff"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sXZ6DD5d+zpQCe/uREX/FdY2LpKFRh4Xve0Ybx6UVvA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-700-D9plYbeK.woff",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-700-D9plYbeK.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sXZ6DD5d+zpQCe/uREX/FdY2LpKFRh4Xve0Ybx6UVvA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sXZ6DD5d+zpQCe/uREX/FdY2LpKFRh4Xve0Ybx6UVvA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-700-hN3duQhD.a1q7d2pnny.woff2",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-700-hN3duQhD.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64740"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jkQ3a3NdzJAnrLzIoN9kw/iGojUp7/J7Ai80TXGekPI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a1q7d2pnny"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/Roboto-700-hN3duQhD.woff2"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jkQ3a3NdzJAnrLzIoN9kw/iGojUp7/J7Ai80TXGekPI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Roboto-700-hN3duQhD.woff2",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-700-hN3duQhD.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64740"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jkQ3a3NdzJAnrLzIoN9kw/iGojUp7/J7Ai80TXGekPI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jkQ3a3NdzJAnrLzIoN9kw/iGojUp7/J7Ai80TXGekPI="
+        }
+      ]
+    },
+    {
       "Route": "css/site.c2tiyv64ts.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1367,7 +3511,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1404,7 +3548,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1449,7 +3593,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1485,8 +3629,336 @@
       ]
     },
     {
+      "Route": "images/heroBackground.94jrfneoz3.png",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\images\\heroBackground.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12828"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d1v/7TDrfuGWMY1ek2PlAntZsXXnB7mSrW3vJScqzRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 06:54:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "94jrfneoz3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/heroBackground.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d1v/7TDrfuGWMY1ek2PlAntZsXXnB7mSrW3vJScqzRs="
+        }
+      ]
+    },
+    {
+      "Route": "images/heroBackground.png",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\images\\heroBackground.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12828"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d1v/7TDrfuGWMY1ek2PlAntZsXXnB7mSrW3vJScqzRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 06:54:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d1v/7TDrfuGWMY1ek2PlAntZsXXnB7mSrW3vJScqzRs="
+        }
+      ]
+    },
+    {
+      "Route": "images/heroBackground1.1hzndi7z3t.png",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\images\\heroBackground1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8755"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qwevh4BgQuyZ4NExgn7NcrQXbwxaNkS71REzM3KPUTM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 06:55:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1hzndi7z3t"
+        },
+        {
+          "Name": "label",
+          "Value": "images/heroBackground1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qwevh4BgQuyZ4NExgn7NcrQXbwxaNkS71REzM3KPUTM="
+        }
+      ]
+    },
+    {
+      "Route": "images/heroBackground1.png",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\images\\heroBackground1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8755"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qwevh4BgQuyZ4NExgn7NcrQXbwxaNkS71REzM3KPUTM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 06:55:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qwevh4BgQuyZ4NExgn7NcrQXbwxaNkS71REzM3KPUTM="
+        }
+      ]
+    },
+    {
+      "Route": "images/heroBackground2.png",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\images\\heroBackground2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18573"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jewJAVA4opsx1uJV0H/6ffXukrd9P0h4uW6nhmGLEHg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 06:55:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jewJAVA4opsx1uJV0H/6ffXukrd9P0h4uW6nhmGLEHg="
+        }
+      ]
+    },
+    {
+      "Route": "images/heroBackground2.ppnela23qe.png",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\images\\heroBackground2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18573"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jewJAVA4opsx1uJV0H/6ffXukrd9P0h4uW6nhmGLEHg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 06:55:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ppnela23qe"
+        },
+        {
+          "Name": "label",
+          "Value": "images/heroBackground2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jewJAVA4opsx1uJV0H/6ffXukrd9P0h4uW6nhmGLEHg="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "425"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CUqSWwYRDfOcNWqG2ENy+CrzVA0tWNl62HuQoZCMAkg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CUqSWwYRDfOcNWqG2ENy+CrzVA0tWNl62HuQoZCMAkg="
+        }
+      ]
+    },
+    {
+      "Route": "index.zhf6q24x7s.html",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "425"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CUqSWwYRDfOcNWqG2ENy+CrzVA0tWNl62HuQoZCMAkg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Nov 2025 07:15:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zhf6q24x7s"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CUqSWwYRDfOcNWqG2ENy+CrzVA0tWNl62HuQoZCMAkg="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1523,7 +3995,7 @@
     },
     {
       "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1568,7 +4040,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1605,7 +4077,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.73kdqttayv.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1650,7 +4122,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1687,7 +4159,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.bpk8xqwxhs.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1732,7 +4204,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1769,7 +4241,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1814,7 +4286,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1851,7 +4323,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.mpyigms19s.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1896,7 +4368,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1933,7 +4405,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.4gxs3k148c.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1978,7 +4450,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2015,7 +4487,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.9b9oa1qrmt.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2060,7 +4532,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2097,7 +4569,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.fctod5rc9n.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2142,7 +4614,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2179,7 +4651,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.ve6x09088i.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2224,7 +4696,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2269,7 +4741,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2306,7 +4778,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2343,7 +4815,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.st1cbwfwo5.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2388,7 +4860,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2425,7 +4897,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.5vj65cig9w.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2470,7 +4942,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2507,7 +4979,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.unj9p35syc.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2552,7 +5024,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2589,7 +5061,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.2q4vfeazbq.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2634,7 +5106,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2671,7 +5143,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2708,7 +5180,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2745,7 +5217,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.o371a8zbv2.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2790,7 +5262,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.n1oizzvkh6.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2835,7 +5307,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.q2ku51ktnl.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2880,7 +5352,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.7na4sro3qu.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2925,7 +5397,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2962,7 +5434,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.jeal3x0ldm.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3007,7 +5479,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3044,7 +5516,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3081,7 +5553,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3118,7 +5590,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.okkk44j0xs.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3163,7 +5635,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.f8imaxxbri.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3208,7 +5680,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.0wve5yxp74.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3253,7 +5725,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3290,7 +5762,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.cwzlr5n8x4.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3335,7 +5807,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3372,7 +5844,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3409,7 +5881,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3446,7 +5918,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.wmug9u23qg.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3491,7 +5963,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.npxfuf8dg6.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3536,7 +6008,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3573,7 +6045,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.j75batdsum.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3618,7 +6090,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3655,7 +6127,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.16095smhkz.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3700,7 +6172,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3737,7 +6209,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3774,7 +6246,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.vy0bq9ydhf.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3819,7 +6291,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.b4skse8du6.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3864,7 +6336,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3901,7 +6373,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.ab1c3rmv7g.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3946,7 +6418,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3983,7 +6455,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4020,7 +6492,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.56d2bn4wt9.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4065,7 +6537,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4102,7 +6574,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.u3xrusw2ol.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4147,7 +6619,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.tey0rigmnh.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4192,7 +6664,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4229,7 +6701,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.kbynt5jhd9.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4274,7 +6746,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4311,7 +6783,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.l2av4jpuoj.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4356,7 +6828,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.25iw1kog22.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4401,7 +6873,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4438,7 +6910,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.c2nslu3uf3.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4483,7 +6955,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4520,7 +6992,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4557,7 +7029,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.2lgwfvgpvi.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4602,7 +7074,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4639,7 +7111,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.m39kt2b5c9.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4684,7 +7156,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4721,7 +7193,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4758,7 +7230,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.wsezl0heh6.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4803,7 +7275,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.um2aeqy4ik.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4848,7 +7320,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4885,7 +7357,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.6ukhryfubh.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4930,7 +7402,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4967,7 +7439,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5004,7 +7476,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5041,7 +7513,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.u33ctipx7g.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5086,7 +7558,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.zwph15dxgs.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5131,7 +7603,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.o4kw7cc6tf.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5176,7 +7648,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5213,7 +7685,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE.81b7ukuj9c",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5258,7 +7730,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.fwhahm2icz.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5303,7 +7775,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5340,7 +7812,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.5pze98is44.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5385,7 +7857,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.dd6z7egasc.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5430,7 +7902,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5467,7 +7939,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5504,7 +7976,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.mlv21k5csn.txt",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5549,7 +8021,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5586,7 +8058,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.ay5nd8zt9x.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5631,7 +8103,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5668,7 +8140,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.9oaff4kq20.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5713,7 +8185,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5750,7 +8222,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5787,7 +8259,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.b7iojwaux1.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5832,7 +8304,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5869,7 +8341,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.pzqfkb6aqo.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5914,7 +8386,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5951,7 +8423,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5996,7 +8468,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.47otxtyo56.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6041,7 +8513,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6078,7 +8550,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.4v8eqarkd7.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6123,7 +8595,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6160,7 +8632,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6205,7 +8677,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6242,7 +8714,7 @@
     },
     {
       "Route": "PTSDProject.bundle.scp.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PTSDProject.bundle.scp.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PTSDProject.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6263,7 +8735,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 07 Oct 2025 07:18:35 GMT"
+          "Value": "Mon, 17 Nov 2025 08:11:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6279,7 +8751,7 @@
     },
     {
       "Route": "PTSDProject.styles.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PTSDProject.styles.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PTSDProject.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6300,7 +8772,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 07 Oct 2025 07:18:35 GMT"
+          "Value": "Mon, 17 Nov 2025 08:11:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6316,7 +8788,7 @@
     },
     {
       "Route": "PTSDProject.ujms06cv4y.bundle.scp.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PTSDProject.bundle.scp.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PTSDProject.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6337,7 +8809,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 07 Oct 2025 07:18:35 GMT"
+          "Value": "Mon, 17 Nov 2025 08:11:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6361,7 +8833,7 @@
     },
     {
       "Route": "PTSDProject.ujms06cv4y.styles.css",
-      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PTSDProject.styles.css",
+      "AssetFile": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PTSDProject.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6382,7 +8854,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 07 Oct 2025 07:18:35 GMT"
+          "Value": "Mon, 17 Nov 2025 08:11:42 GMT"
         },
         {
           "Name": "Cache-Control",

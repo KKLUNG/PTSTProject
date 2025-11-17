@@ -11,17 +11,19 @@
     <dx-validation-group ref="vg">
       <div class="login-header">
         <!--<div class="title">{{ title }}</div>-->
+        <!-- appInfo.titleLogo 在app-config.ts中定義 -->
         <div class="loginTitle">{{ appInfo.titleLogo }}<br /></div>
         <br />
         <div class="loginSubTitle" v-html="logoVision"></div>
       </div>
 
+      <!-- 帳號輸入框 -->
       <div class="dx-field">
         <i class="icon dx-icon-user" style="font-size: 1.8em" />
         <dx-text-box
           placeholder="Your account"
           width="100%"
-          :value.sync="login"
+          v-model:value="login"
         >
           <dx-validator>
             <dx-required-rule message="Account is required" />
@@ -31,13 +33,15 @@
 
       <div class="dx-field">
         <i class="icon icon-lock" style="font-size: 1.8em" />
+        <!-- 密碼輸入框 -->
         <dx-text-box
           placeholder="Your password"
           width="100%"
           :mode="passwordMode"
-          :value.sync="password"
+          v-model:value="password"
           @enter-key="onEnterKey"
         >
+        <!-- 顯示密碼button -->
           <dx-text-box-button
             :options="passwordButton"
             name="password"
@@ -60,6 +64,7 @@
         />
       </div>
 
+      <!-- isCaptcha -->
       <div
         v-show="isCaptcha"
         style="
@@ -78,7 +83,7 @@
           <DxNumberBox
             placeholder="Your answer"
             width="100px"
-            :value.sync="answer"
+            v-model:value="answer"
             :step="0"
             @enter-key="onEnterKey"
           >
@@ -157,7 +162,7 @@
         <dx-text-box
           placeholder="Your account"
           width="100%"
-          :value.sync="forgotPasswordId"
+          v-model:value="forgotPasswordId"
         >
           <dx-validator>
             <dx-required-rule message="Account is required" />
@@ -168,7 +173,7 @@
         <dx-text-box
           placeholder="email or cellphone"
           width="100%"
-          :value.sync="forgotPasswordEmailOrCellPhone"
+          v-model:value="forgotPasswordEmailOrCellPhone"
         >
           <dx-validator>
             <dx-required-rule message="email or cellphone is required" />
@@ -206,7 +211,7 @@
           <DxNumberBox
             placeholder="Your answer"
             width="100px"
-            :value.sync="answer"
+            v-model:value="answer"
           ></DxNumberBox>
         </div>
       </div>
@@ -275,12 +280,13 @@ const password = ref('');
 const rememberUser = ref(false);
 const loading = ref(false);
 const loadingMessage = ref('Loading...please Wait');
-const logoUrl = "logo.png";
-const randomAnswer = ref(0);
-const randomA = ref(0);
-const randomB = ref(0);
+const logoUrl = "../images/logo.png";
+
+const randomA = ref(Math.floor(Math.random() * Math.floor(50)));
+const randomB = ref(Math.floor(Math.random() * Math.floor(50)));
+const randomAnswer = ref(randomA.value + randomB.value);
 const answer = ref<number | null>(null);
-const isCaptcha = ref(false);
+const isCaptcha = appInfo.isShowCaptcha;
 const isLargeScreen = window.innerWidth > 960;
 const passwordMode = ref<'password' | 'text'>('password');
 const passwordButton: { icon: string; type: string; onClick: () => void } = {
@@ -339,18 +345,19 @@ const isNullOrEmpty = (value: any): boolean => {
 // 事件處理函數
 // ============================================
 const onLoginClick = (e: Event) => {
+  console.log('1')
   if (appInfo.isShowFactorySet) {
     if (isNullOrEmpty(appInfo.factory)) {
       showAlert(`Please select location - ${appInfo.title}`)
       return;
     }
   }
-
+  console.log('2')
   const result: DxValidationResult | undefined = vg.value?.instance.validate();
   if (!result || !result.isValid) {
     return;
   }
-
+  console.log('3')
   disableButton.value = true;
   if (randomAnswer.value != answer.value && isCaptcha.value) {
     showAlert(`The answer is ${randomAnswer.value}, please try again. - ${appInfo.title}`)
@@ -367,11 +374,12 @@ const onLoginClick = (e: Event) => {
     disableButton.value = false;
     return;
   }
-
+  console.log('4')
   loading.value = true;
   const para = {
     userId: login.value,
     password: password.value,
+    language: appInfo.language
   };
   logining(para);
 }
@@ -471,6 +479,7 @@ const onSendPasswordToEmail = () => {
 
 // 簡化版登入函數（移除不存在的 mixin 方法）
 const logining = async (para: { userId: string; password: string }) => {
+  console.log('5')
   //清除 $ms
   for (const key in $ms) {
     delete $ms[key];
@@ -478,8 +487,9 @@ const logining = async (para: { userId: string; password: string }) => {
 
   try {
     const res = await apiPost("/api/auth/login", para);
-    
+    console.log('6')
     if (res.status == 200) {
+      console.log('7')
       if (res.data[0].IsIPAllow == "1") {
         // 登入成功
         auth.logIn(res.data[0].Token);
@@ -549,13 +559,41 @@ const logining = async (para: { userId: string; password: string }) => {
 
 </script>
 
-<style>
-.container { max-width: 420px; margin: 40px auto; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
-.login-card { padding: 20px; }
-.title { margin: 0 0 12px; font-weight: 600; }
-.field { margin: 12px 0; display: flex; flex-direction: column; }
-.error { color: #c00; margin-top: 12px; }
-.success { background: #f5f5f5; padding: 12px; border-radius: 8px; margin-top: 12px; }
+<style lang="scss">
+@use "../themes/generated/variables.base.scss" as *;
+
+.login-header {
+  text-align: center;
+  margin-bottom: 20%;
+  margin-left: -35px;
+  margin-right: -35px;
+
+  .title {
+    color: $base-accent;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .progessbar {
+    text-align: center;
+    border: 1px dashed blue;
+    height: 16px;
+    width: 250px;
+  }
+
+  .progessbar .text {
+    text-align: center;
+    width: 100%;
+    line-height: 16px;
+    z-index: 10;
+  }
+
+  .progessbar .bar {
+    height: 16px;
+    background-color: green;
+  }
+}
 </style>
 
 

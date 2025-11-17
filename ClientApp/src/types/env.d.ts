@@ -53,8 +53,24 @@ declare module '@/utils/api-util' {
   export function apiGetBlobFile(url: string, params?: any): Promise<Blob>
 }
 
-declare module '@/css/scssToFunction.scss' {
-  const content: any
+declare module '@/css/scssToFunction.module.scss' {
+  const content: {
+    baseAccent: string
+    baseTextColor: string
+    baseBg: string
+    baseBorderColor: string
+    baseBorderRadius: string
+    baseWebPartIcon: string
+    baseWebpartHeaderColor: string
+    baseWebpartHeaderBackgroundColor: string
+    baseGVHeaderColor: string
+    baseGvHeaderBackgroundColor: string
+    baseHyperLinkColor: string
+    baseLoginBackgroundColor: string
+    baseFvHeaderColor: string
+    baseFvTextEditorColor: string
+    [key: string]: string
+  }
   export default content
 }
 

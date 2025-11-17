@@ -1,4 +1,4 @@
-@import "@/themes/generated/variables.base.scss";
+@use "@/themes/generated/variables.base.scss" as *;
 //this is custom for system defined color css
 //custom color overhere 
 $menuIcon: #62f053;      

@@ -1,30 +1,30 @@
 import Device from "devextreme/core/devices";
-import viteConfig from "../../vite.config"
+import appConfig from "../../../app-config"
 import { langSet } from "./constData"
 export default {
-  title: viteConfig.pluginOptions.title,   //Tuntex EIP //美登 //Juenesse     //this parameter in CMSABMTicket's programName 
-  titleLogo: viteConfig.pluginOptions.titleLogo, //"TUNtex Integration Platform", //TUNtex Integration Platform //美登教室 //Juenesse 
-  loginVisionTW: viteConfig.pluginOptions.loginVisionTW,
-  loginVisionEN: viteConfig.pluginOptions.loginVisionEN,
-  isShowHelp: viteConfig.pluginOptions.isShowHelp,  //show help icon on footer
-  isShowLang: viteConfig.pluginOptions.isShowLang,  // show language selection on right top
-  isShowBrand: viteConfig.pluginOptions.isShowBrand,
-  _isShowCaptcha: viteConfig.pluginOptions.isShowCaptcha,
-  appVersion: viteConfig.pluginOptions.appVersion,  // appversion
-  //showVideo: viteConfig.pluginOptions.showVideo,
-  isMobileEqualPC: viteConfig.pluginOptions.isMobileEqualPC,
-  defaultBrand: viteConfig.pluginOptions.defaultBrand,
-  defaultFactory: viteConfig.pluginOptions.defaultFactory,
-  isShowFooter: viteConfig.pluginOptions.isShowFooter,
-  isWarningOnHeader: viteConfig.pluginOptions.isWarningOnHeader,
-  defaultLanguage: viteConfig.pluginOptions.defaultLanguage,
-  isPasswordChangeAlert: viteConfig.pluginOptions.isPasswordChangeAlert, // control with first time login and display forgot password button.
-  virtualDirectory: viteConfig.publicPath,
-  isShowMainMenu: viteConfig.pluginOptions.isShowMainMenu,
-  cacheMode: viteConfig.pluginOptions.cacheMode,
-  isNativeScrollBar: viteConfig.pluginOptions.isNativeScrollBar,
-  preLoadXML: viteConfig.pluginOptions.preLoadXML,
-  useTheme:viteConfig.pluginOptions.useTheme,
+  title: appConfig.pluginOptions.title,   //Tuntex EIP //美登 //Juenesse     //this parameter in CMSABMTicket's programName 
+  titleLogo: appConfig.pluginOptions.titleLogo, //"TUNtex Integration Platform", //TUNtex Integration Platform //美登教室 //Juenesse 
+  loginVisionTW: appConfig.pluginOptions.loginVisionTW,
+  loginVisionEN: appConfig.pluginOptions.loginVisionEN,
+  isShowHelp: appConfig.pluginOptions.isShowHelp,  //show help icon on footer
+  isShowLang: appConfig.pluginOptions.isShowLang,  // show language selection on right top
+  isShowBrand: appConfig.pluginOptions.isShowBrand,
+  _isShowCaptcha: appConfig.pluginOptions.isShowCaptcha,
+  appVersion: appConfig.pluginOptions.appVersion,  // appversion
+  //showVideo: appConfig.pluginOptions.showVideo,
+  isMobileEqualPC: appConfig.pluginOptions.isMobileEqualPC,
+  defaultBrand: appConfig.pluginOptions.defaultBrand,
+  defaultFactory: appConfig.pluginOptions.defaultFactory,
+  isShowFooter: appConfig.pluginOptions.isShowFooter,
+  isWarningOnHeader: appConfig.pluginOptions.isWarningOnHeader,
+  defaultLanguage: appConfig.pluginOptions.defaultLanguage,
+  isPasswordChangeAlert: appConfig.pluginOptions.isPasswordChangeAlert, // control with first time login and display forgot password button.
+  virtualDirectory: appConfig.publicPath,
+  isShowMainMenu: appConfig.pluginOptions.isShowMainMenu,
+  cacheMode: appConfig.pluginOptions.cacheMode,
+  isNativeScrollBar: appConfig.pluginOptions.isNativeScrollBar,
+  preLoadXML: appConfig.pluginOptions.preLoadXML,
+  useTheme:appConfig.pluginOptions.useTheme,
   
 
   notifyDelay: 1500,

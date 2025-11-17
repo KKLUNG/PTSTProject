@@ -11,7 +11,11 @@ import CMSHomePage from "./views/CMSHomePage.vue";
 //ts不用new createRouter，直接createRouter
 const router = createRouter({
     history: createWebHashHistory(),
-    routes: [   
+    routes: [
+        {
+            path: "/",
+            redirect: "/CMSLogin"
+        },
         {
             path: "/CMSLogin",
             name: "CMSLogin",

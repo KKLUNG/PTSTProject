@@ -32,6 +32,12 @@ import { apiGet, apiPost, apiSSO, apiFile, apiDeleteFile, apiGetBlobFile } from 
 import * as debug from './debug'
 
 // ============================================
+// Themes 和 CSS 變數
+// ============================================
+// 在 Vite 中，使用 .module.scss 才能正確處理 :export
+import cssVariable from '@/css/scssToFunction.module.scss'
+
+// ============================================
 // 型別定義
 // ============================================
 interface MemoryStorage {
@@ -55,6 +61,7 @@ app.use(store)
 // ============================================
 app.config.globalProperties.debug = debug
 app.config.globalProperties.$appInfo = appInfo
+app.config.globalProperties.$cssVariable = cssVariable
 app.config.globalProperties.apiGet = apiGet
 app.config.globalProperties.apiPost = apiPost
 app.config.globalProperties.apiFile = apiFile

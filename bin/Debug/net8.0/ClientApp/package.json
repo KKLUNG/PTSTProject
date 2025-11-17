@@ -10,14 +10,17 @@
   },
   "dependencies": {
     "axios": "^1.7.2",
-    "vue": "^3.4.0",
-    "vue-router": "^4.5.1"
+    "vue": "^3.4.15",
+    "vue-router": "^4.5.1",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.0",
+    "@vue/cli-service": "^4.5.19",
     "devextreme": "23.1.8",
     "devextreme-vue": "23.1.8",
     "eslint": "^9.36.0",
+    "sass-embedded": "^1.93.3",
     "vite": "^5.4.0"
   }
 }

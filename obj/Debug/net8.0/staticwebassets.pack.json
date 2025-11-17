@@ -1,247 +1,343 @@
 {
   "Files": [
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PTSDProject.bundle.scp.css",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PTSDProject.bundle.scp.css",
       "PackagePath": "staticwebassets\\PTSDProject.ujms06cv4y.bundle.scp.css"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\css\\site.css",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\CMSLogin-CvBl3GRj.js",
+      "PackagePath": "staticwebassets\\assets\\CMSLogin-CvBl3GRj.js"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\CMSLogin-DARwkBp1.js",
+      "PackagePath": "staticwebassets\\assets\\CMSLogin-DARwkBp1.js"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-300-Cu-PAxXt.woff",
+      "PackagePath": "staticwebassets\\assets\\Roboto-300-Cu-PAxXt.woff"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-300-DHTugVNA.woff2",
+      "PackagePath": "staticwebassets\\assets\\Roboto-300-DHTugVNA.woff2"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-300-Dwz7nuwl.ttf",
+      "PackagePath": "staticwebassets\\assets\\Roboto-300-Dwz7nuwl.ttf"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-400-BX5l9hRW.woff",
+      "PackagePath": "staticwebassets\\assets\\Roboto-400-BX5l9hRW.woff"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-400-C6rbFxYz.woff2",
+      "PackagePath": "staticwebassets\\assets\\Roboto-400-C6rbFxYz.woff2"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-400-CmjnF39D.ttf",
+      "PackagePath": "staticwebassets\\assets\\Roboto-400-CmjnF39D.ttf"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-500-ByKogCTi.woff2",
+      "PackagePath": "staticwebassets\\assets\\Roboto-500-ByKogCTi.woff2"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-500-BzTpVR6v.ttf",
+      "PackagePath": "staticwebassets\\assets\\Roboto-500-BzTpVR6v.ttf"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-500-b81vv18W.woff",
+      "PackagePath": "staticwebassets\\assets\\Roboto-500-b81vv18W.woff"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-700-0vjaqapF.ttf",
+      "PackagePath": "staticwebassets\\assets\\Roboto-700-0vjaqapF.ttf"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-700-D9plYbeK.woff",
+      "PackagePath": "staticwebassets\\assets\\Roboto-700-D9plYbeK.woff"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\Roboto-700-hN3duQhD.woff2",
+      "PackagePath": "staticwebassets\\assets\\Roboto-700-hN3duQhD.woff2"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\dxiconsmaterial-CjTfgWpM.woff",
+      "PackagePath": "staticwebassets\\assets\\dxiconsmaterial-CjTfgWpM.woff"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\dxiconsmaterial-CmwasQT-.ttf",
+      "PackagePath": "staticwebassets\\assets\\dxiconsmaterial-CmwasQT-.ttf"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\dxiconsmaterial-f3q1YYkC.woff2",
+      "PackagePath": "staticwebassets\\assets\\dxiconsmaterial-f3q1YYkC.woff2"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\index-CuXpr25K.css",
+      "PackagePath": "staticwebassets\\assets\\index-CuXpr25K.css"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\index-DfoQVOEc.js",
+      "PackagePath": "staticwebassets\\assets\\index-DfoQVOEc.js"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\index-Q19B6nT1.js",
+      "PackagePath": "staticwebassets\\assets\\index-Q19B6nT1.js"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\favicon.ico",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\js\\site.js",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\images\\heroBackground.png",
+      "PackagePath": "staticwebassets\\images\\heroBackground.png"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\images\\heroBackground1.png",
+      "PackagePath": "staticwebassets\\images\\heroBackground1.png"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\images\\heroBackground2.png",
+      "PackagePath": "staticwebassets\\images\\heroBackground2.png"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
