@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Data;
+using System.IO;
 using System.Xml;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -15,10 +16,17 @@ namespace PTSDProject
     {
         //連線資料庫字串
         #region private utility methods & constructors
-        private static readonly IConfiguration config = new ConfigurationBuilder()
-              .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-              .Build();
-        private static readonly string _connString = config.GetConnectionString("PTSDContext");
+        private static readonly Lazy<IConfiguration> _config = new Lazy<IConfiguration>(() =>
+        {
+            return new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddJsonFile("appsettings.Development.json", optional: true, reloadOnChange: true)
+                .Build();
+        });
+        
+        private static string _connString => _config.Value.GetConnectionString("PTSDContext") 
+            ?? throw new InvalidOperationException("Connection string 'PTSDContext' not found in appsettings.json");
 
         // 若不想使用 "new SqlHelper()" 則將宣告為 private constructor
         private SqlHelper()

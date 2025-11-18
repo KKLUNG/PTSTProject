@@ -1,5 +1,5 @@
 import Device from "devextreme/core/devices";
-import appConfig from "../../../app-config"
+import appConfig from "../../app-config"
 import { langSet } from "./constData"
 export default {
   title: appConfig.pluginOptions.title,   //Tuntex EIP //美登 //Juenesse     //this parameter in CMSABMTicket's programName 

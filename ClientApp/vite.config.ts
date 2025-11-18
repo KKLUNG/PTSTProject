@@ -2,7 +2,7 @@ import { defineConfig } from "vite"
 import vue from "@vitejs/plugin-vue"
 import { fileURLToPath, URL } from "node:url"
 
-import appConfig from "../app-config"
+import appConfig from "./app-config"
 
 const { publicPath, outputDir } = appConfig
 

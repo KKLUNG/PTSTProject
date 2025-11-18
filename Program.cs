@@ -8,8 +8,13 @@ builder.Services.AddControllers();
 builder.Services.AddRazorPages();
 
 // Add Database
+var connectionString = builder.Configuration.GetConnectionString("PTSDContext");
+if (string.IsNullOrEmpty(connectionString))
+{
+    throw new InvalidOperationException("Connection string 'PTSDContext' not found in appsettings.json");
+}
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("PTSDContext")));
+    options.UseSqlServer(connectionString));
 
 // Add CORS
 builder.Services.AddCors(options =>
@@ -29,6 +34,11 @@ var issuer = jwtSection["Issuer"];
 var audience = jwtSection["Audience"];
 var key = jwtSection["Key"];
 
+if (string.IsNullOrEmpty(key))
+{
+    throw new InvalidOperationException("JWT Key not found in appsettings.json");
+}
+
 builder.Services
     .AddAuthentication(options =>
     {
@@ -45,7 +55,7 @@ builder.Services
             ValidateIssuerSigningKey = true,
             ValidIssuer = issuer,
             ValidAudience = audience,
-            IssuerSigningKey = new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(key ?? string.Empty))
+            IssuerSigningKey = new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(key))
         };
     });
 
@@ -58,13 +68,9 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
     app.UseHsts();
-}
-
-// 開發環境不使用 HTTPS 重定向
-if (!app.Environment.IsDevelopment())
-{
     app.UseHttpsRedirection();
 }
+
 app.UseStaticFiles();
 app.UseDefaultFiles(); // 支持 index.html
 
@@ -72,17 +78,12 @@ app.UseRouting();
 
 app.UseCors("AllowVite");
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseCors("AllowVite");
-}
-
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
 app.MapRazorPages();
 
-app.MapFallbackToFile("index.html");
+//app.MapFallbackToFile("index.html");
 
 app.Run();
