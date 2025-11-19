@@ -5,7 +5,7 @@ const loginVisionEN = "Develop human capital<br />and create wisdom value" //log
 const defaultBrand = "Tuntex" //default brand name 
 const defaultFactory = "TW"  //default factory name
 const defaultLanguage = "zhTW"  //default language => enUS vi th id zhCN kh
-const isShowMainMenu = false //use for show Main tile
+const isShowMainMenu = true //use for show Main tile
 const isShowHelp = false  //show help icon on footer => conrdova doesn't work
 const isShowLang = true
 const isShowBrand = false

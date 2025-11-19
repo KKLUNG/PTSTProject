@@ -10,6 +10,8 @@ using Microsoft.Data.SqlClient;
 using Microsoft.AspNetCore.Mvc.Routing;
 using System.Data;
 using System.Net;
+using System.Linq;
+using System.Collections.Generic;
 
 
 namespace PTSDProject.Controllers
@@ -28,14 +30,14 @@ namespace PTSDProject.Controllers
             _context = context;
         }
 
-        public record LoginRequest(string Username, string Password);
+        public record LoginRequest(string userId, string password, string language);
 
         [HttpPost("login")]
         [AllowAnonymous]
-        public async Task<IActionResult> Login([FromBody] LoginRequest request)
+        public IActionResult Login([FromBody] LoginRequest request)
         {
-            string userId = request.Username;
-            string password = request.Password;
+            string userId = request.userId;
+            string password = request.password;   
 
             try
             {
@@ -81,7 +83,7 @@ namespace PTSDProject.Controllers
                         @Token as Token,
                         @GroupNames as GroupNames, 
                         @GroupGuids as GroupGuids,
-                        '1' as IsIPAllow,
+                        AllowIP as IsIPAllow,
                         @UserIP as UserIP
                     FROM vw_CMSUser A 
                     LEFT JOIN vw_BAT_OneCMSUserInOneCMSDept B ON A.UserGuid = B.UserGuid 
@@ -103,9 +105,30 @@ namespace PTSDProject.Controllers
                 if (ds.Tables[0].Rows.Count == 0)
                     return StatusCode(204); // 帳號密碼錯誤
 
-                // 返回完整用戶資料（前端需要的格式）
-                string strJson = Newtonsoft.Json.JsonConvert.SerializeObject(ds.Tables[0], Newtonsoft.Json.Formatting.Indented);
-                return Ok(strJson);
+                // 將 DataTable 轉換為物件陣列（前端期望的格式）
+                var result = new List<object>();
+                foreach (DataRow row in ds.Tables[0].Rows)
+                {
+                    result.Add(new
+                    {
+                        UserId = row["UserId"]?.ToString(),
+                        UserImageUrl = row["UserImageUrl"]?.ToString(),
+                        UserGuid = row["UserGuid"]?.ToString(),
+                        UserName = row["UserName"]?.ToString(),
+                        UserTitle = row["UserTitle"]?.ToString(),
+                        LastActiveDate = row["LastActiveDate"]?.ToString(),
+                        DeptGuid = row["DeptGuid"]?.ToString(),
+                        DeptName = row["DeptName"]?.ToString(),
+                        DeptNameAll = row["DeptNameAll"]?.ToString(),
+                        Token = row["Token"]?.ToString(),
+                        GroupNames = row["GroupNames"]?.ToString(),
+                        GroupGuids = row["GroupGuids"]?.ToString(),
+                        IsIPAllow = row["IsIPAllow"]?.ToString(),
+                        UserIP = row["UserIP"]?.ToString()
+                    });
+                }
+
+                return Ok(result);
             }
             catch (Exception ex)
             {

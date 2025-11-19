@@ -484,13 +484,16 @@ const logining = async (para: { userId: string; password: string }) => {
   for (const key in $ms) {
     delete $ms[key];
   }
-
+  console.log('6')
   try {
+    console.log(para);
     const res = await apiPost("/api/auth/login", para);
-    console.log('6')
     if (res.status == 200) {
       console.log('7')
-      if (res.data[0].IsIPAllow == "1") {
+      console.log(res.data[0]);
+      console.log(res.data[0].isIPAllow);
+      
+      if (res.data[0].isIPAllow == "1") {
         // 登入成功
         auth.logIn(res.data[0].Token);
         appInfo.userInfo.userId = res.data[0].UserId;
@@ -516,7 +519,6 @@ const logining = async (para: { userId: string; password: string }) => {
         // 目前暫時跳過這些預載步驟
 
         loginCount = 0;
-        
         // 導向首頁
         if (appInfo.isShowMainMenu) {
           router.push({ path: "/CMSMainMenu" }).catch(() => {});

@@ -173,7 +173,7 @@ export default {
 
     //return 'https://nas.tun.com.tw/ticpur'
     //return 'https://eip.tun.com.tw'  // mac debug use
-    return (this.isCordova) ? window.sessionStorage.getItem('_serverUrl') : (process.env.NODE_ENV == 'production') ? window.location.protocol + "//" + window.location.host + window.location.pathname.substring(0, window.location.pathname.length - 1) : 'https://localhost:44358' 
+    return (this.isCordova) ? window.sessionStorage.getItem('_serverUrl') : (process.env.NODE_ENV == 'production') ? window.location.protocol + "//" + window.location.host + window.location.pathname.substring(0, window.location.pathname.length - 1) : 'http://localhost:5216' 
   },
   set serverUrl(value) {
     window.sessionStorage.setItem('_serverUrl', String(value))

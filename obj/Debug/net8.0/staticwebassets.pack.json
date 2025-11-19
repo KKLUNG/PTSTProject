@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PTSDProject.bundle.scp.css",
-      "PackagePath": "staticwebassets\\PTSDProject.ujms06cv4y.bundle.scp.css"
-    },
-    {
       "Id": "C:\\Project\\MVC\\PTSDProject\\PTSDProject\\wwwroot\\assets\\CMSLogin-CvBl3GRj.js",
       "PackagePath": "staticwebassets\\assets\\CMSLogin-CvBl3GRj.js"
     },
