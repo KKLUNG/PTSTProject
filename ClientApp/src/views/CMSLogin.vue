@@ -345,19 +345,16 @@ const isNullOrEmpty = (value: any): boolean => {
 // 事件處理函數
 // ============================================
 const onLoginClick = (e: Event) => {
-  console.log('1')
   if (appInfo.isShowFactorySet) {
     if (isNullOrEmpty(appInfo.factory)) {
       showAlert(`Please select location - ${appInfo.title}`)
       return;
     }
   }
-  console.log('2')
   const result: DxValidationResult | undefined = vg.value?.instance.validate();
   if (!result || !result.isValid) {
     return;
   }
-  console.log('3')
   disableButton.value = true;
   if (randomAnswer.value != answer.value && isCaptcha.value) {
     showAlert(`The answer is ${randomAnswer.value}, please try again. - ${appInfo.title}`)
@@ -374,7 +371,6 @@ const onLoginClick = (e: Event) => {
     disableButton.value = false;
     return;
   }
-  console.log('4')
   loading.value = true;
   const para = {
     userId: login.value,
@@ -479,20 +475,14 @@ const onSendPasswordToEmail = () => {
 
 // 簡化版登入函數（移除不存在的 mixin 方法）
 const logining = async (para: { userId: string; password: string }) => {
-  console.log('5')
   //清除 $ms
   for (const key in $ms) {
     delete $ms[key];
   }
-  console.log('6')
   try {
-    console.log(para);
     const res = await apiPost("/api/auth/login", para);
     if (res.status == 200) {
-      console.log('7')
       console.log(res.data[0]);
-      console.log(res.data[0].isIPAllow);
-      
       if (res.data[0].isIPAllow == "1") {
         // 登入成功
         auth.logIn(res.data[0].Token);

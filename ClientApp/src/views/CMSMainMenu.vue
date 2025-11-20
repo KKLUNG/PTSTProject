@@ -83,19 +83,25 @@ const loadMainMenu = async () => {
   try {
     const userGuid = appInfo.userInfo?.userGuid || ''
     const language = appInfo.language || 'zhTW'
+    console.log('1');
     
     if (!userGuid) {
       showAlert('使用者資訊不完整，請重新登入', appInfo.title)
       router.push('/CMSLogin')
       return
     }
-
-    const response = await apiGet(
-      `/api/CMS/GetCMSMainMenu?UserGuid=${userGuid}&Language=${language}`
-    )
-
+    var para = {
+      UserGuid: userGuid,
+      Language: language
+    }
+    console.log('2');
+    const response = await apiGet('/api/CMS/GetCMSMainMenu', para)
+    console.log('3');
     if (response.status === 200 && response.data) {
-      menuItems.value = JSON.parse(response.data)
+      // response.data 已經是物件，不需要再 JSON.parse
+      menuItems.value = (typeof response.data === 'string') 
+        ? JSON.parse(response.data) 
+        : response.data
       console.log('📋 CMSMainMenu: 載入菜單成功', menuItems.value)
     } else if (response.status === 204) {
       menuItems.value = []
@@ -116,9 +122,8 @@ const navigateToMenu = (item: MenuItem) => {
   console.log('🔗 導航到菜單:', item)
   
   if (item.MenuGuid) {
-    // 導航到 CMSPage（如果已實作）或 CMSHomePage
-    router.push(`/CMSHomePage`)
-    // 未來可以改為: router.push(`/CMSPage/${item.MenuGuid}`)
+    // 導航到 CMSPage
+    router.push(`/CMSPage/${item.MenuGuid}`)
   }
 }
 

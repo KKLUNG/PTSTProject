@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 namespace PTSDProject.Controllers
 {
@@ -109,6 +109,36 @@ namespace PTSDProject.Controllers
         public ActionResult GetNewGuid()
         {
             return Ok(new { guid = Guid.NewGuid().ToString() });
+        }
+
+        /// <summary>
+        /// 取得未讀訊息數量 (Badge)
+        /// </summary>
+        [HttpGet]
+        public ActionResult GetBadge(string UserGuid)
+        {
+            try
+            {
+                using SqlCommand cmd = new SqlCommand();
+                cmd.Parameters.AddWithValue("@UserGuid", UserGuid);
+                
+                cmd.CommandText = @"
+                    SELECT ISNULL(COUNT(*), 0) AS Badge
+                    FROM CMSNotify
+                    WHERE ToUserGuid = @UserGuid 
+                    AND IsRead = 0 
+                    AND IsActive = 1";
+
+                using DataSet ds = SqlHelper.ExecuteDataset(cmd);
+                string strJson = Newtonsoft.Json.JsonConvert.SerializeObject(ds.Tables[0], Newtonsoft.Json.Formatting.Indented);
+
+                return Ok(strJson);
+            }
+            catch (Exception ex)
+            {
+                // 如果資料表不存在，返回 0
+                return Ok("[{\"Badge\": 0}]");
+            }
         }
 
         #endregion

@@ -269,9 +269,8 @@ namespace PTSDProject.Controllers
                 
                 cmd.CommandText = @"
                     SELECT * 
-                    FROM vw_CMSMenuItem 
+                    FROM CMSMenus
                     WHERE MenuGuid = @MenuGuid 
-                    ORDER BY MenusSequence
                 ";
 
                 using DataSet ds = SqlHelper.ExecuteDataset(cmd);
@@ -281,6 +280,524 @@ namespace PTSDProject.Controllers
                     return Ok(strJson);
                 else
                     return StatusCode(204);
+            }
+            catch (Exception ex)
+            {
+                string errMsg = Newtonsoft.Json.JsonConvert.SerializeObject(ex.Message, Newtonsoft.Json.Formatting.Indented);
+                return BadRequest(errMsg);
+            }
+        }
+
+        #endregion
+
+        #region 使用者管理 API
+
+        /// <summary>
+        /// 取得使用者個人資料
+        /// </summary>
+        [HttpGet]
+        public ActionResult GetUserProfile(string UserGuid)
+        {
+            try
+            {
+                using SqlCommand cmd = new SqlCommand();
+                cmd.Parameters.AddWithValue("@UserGuid", UserGuid);
+                cmd.CommandText = @"
+                    SELECT A.UserGuid, A.UserId, A.UserName, A.UserTitle, A.UserEmail, 
+                           A.UserCellPhone, A.UserImageUrl, A.LastActiveDate,
+                           B.DeptGuid, B.DeptName, B.DeptNameAll
+                    FROM vw_CMSUser A
+                    LEFT JOIN vw_BAT_OneCMSUserInOneCMSDept B ON A.UserGuid = B.UserGuid
+                    WHERE A.UserGuid = @UserGuid";
+
+                using DataSet ds = SqlHelper.ExecuteDataset(cmd);
+                string strJson = Newtonsoft.Json.JsonConvert.SerializeObject(ds.Tables[0], Newtonsoft.Json.Formatting.Indented);
+
+                if (ds.Tables[0].Rows.Count > 0)
+                    return Ok(strJson);
+                else
+                    return StatusCode(204);
+            }
+            catch (Exception ex)
+            {
+                string errMsg = Newtonsoft.Json.JsonConvert.SerializeObject(ex.Message, Newtonsoft.Json.Formatting.Indented);
+                return BadRequest(errMsg);
+            }
+        }
+
+        /// <summary>
+        /// 取得使用者清單
+        /// </summary>
+        [HttpGet]
+        public ActionResult GetUserList(string DeptGuid = "", string Keyword = "", int PageSize = 50, int PageIndex = 1)
+        {
+            try
+            {
+                using SqlCommand cmd = new SqlCommand();
+                
+                string whereClause = "WHERE 1=1";
+                
+                if (!string.IsNullOrEmpty(DeptGuid) && DeptGuid != _EmptyGuid)
+                {
+                    cmd.Parameters.AddWithValue("@DeptGuid", DeptGuid);
+                    whereClause += " AND UserGuid IN (SELECT UserGuid FROM CMSUserInDept WHERE DeptGuid = @DeptGuid)";
+                }
+
+                if (!string.IsNullOrEmpty(Keyword))
+                {
+                    cmd.Parameters.AddWithValue("@Keyword", "%" + Keyword + "%");
+                    whereClause += " AND (UserId LIKE @Keyword OR UserName LIKE @Keyword OR UserEmail LIKE @Keyword)";
+                }
+
+                cmd.CommandText = $@"
+                    SELECT UserGuid, UserId, UserName, UserTitle, UserEmail, 
+                           UserCellPhone, UserImageUrl, LastActiveDate, IsActive
+                    FROM vw_CMSUser
+                    {whereClause}
+                    ORDER BY UserId
+                    OFFSET {(PageIndex - 1) * PageSize} ROWS
+                    FETCH NEXT {PageSize} ROWS ONLY";
+
+                using DataSet ds = SqlHelper.ExecuteDataset(cmd);
+                string strJson = Newtonsoft.Json.JsonConvert.SerializeObject(ds.Tables[0], Newtonsoft.Json.Formatting.Indented);
+
+                if (ds.Tables[0].Rows.Count > 0)
+                    return Ok(strJson);
+                else
+                    return StatusCode(204);
+            }
+            catch (Exception ex)
+            {
+                string errMsg = Newtonsoft.Json.JsonConvert.SerializeObject(ex.Message, Newtonsoft.Json.Formatting.Indented);
+                return BadRequest(errMsg);
+            }
+        }
+
+        /// <summary>
+        /// 更新使用者個人資料
+        /// </summary>
+        [HttpPost]
+        public ActionResult UpdateUserProfile([FromBody] System.Text.Json.JsonElement obj)
+        {
+            try
+            {
+                string userGuid = obj.GetProperty("UserGuid").GetString();
+                string userName = obj.GetProperty("UserName").GetString();
+                string userTitle = Utility.CheckObjectKey(obj, "UserTitle") ? obj.GetProperty("UserTitle").GetString() : "";
+                string userEmail = Utility.CheckObjectKey(obj, "UserEmail") ? obj.GetProperty("UserEmail").GetString() : "";
+                string userCellPhone = Utility.CheckObjectKey(obj, "UserCellPhone") ? obj.GetProperty("UserCellPhone").GetString() : "";
+
+                using SqlCommand cmd = new SqlCommand();
+                cmd.Parameters.AddWithValue("@UserGuid", userGuid);
+                cmd.Parameters.AddWithValue("@UserName", userName);
+                cmd.Parameters.AddWithValue("@UserTitle", userTitle);
+                cmd.Parameters.AddWithValue("@UserEmail", userEmail);
+                cmd.Parameters.AddWithValue("@UserCellPhone", userCellPhone);
+
+                cmd.CommandText = @"
+                    UPDATE CMSUser 
+                    SET UserName = @UserName,
+                        UserTitle = @UserTitle,
+                        UserEmail = @UserEmail,
+                        UserCellPhone = @UserCellPhone,
+                        ModifiedDate = GETDATE()
+                    WHERE UserGuid = @UserGuid";
+
+                int affected = SqlHelper.ExecuteNonQuery(cmd);
+
+                if (affected > 0)
+                    return Ok(new { success = true, message = "更新成功" });
+                else
+                    return StatusCode(204);
+            }
+            catch (Exception ex)
+            {
+                string errMsg = Newtonsoft.Json.JsonConvert.SerializeObject(ex.Message, Newtonsoft.Json.Formatting.Indented);
+                return BadRequest(errMsg);
+            }
+        }
+
+        #endregion
+
+        #region 部門管理 API
+
+        /// <summary>
+        /// 取得部門樹狀結構
+        /// </summary>
+        [HttpGet]
+        public ActionResult GetDeptTree()
+        {
+            try
+            {
+                using DataSet ds = SqlHelper.ExecuteDataset(@"
+                    SELECT DeptGuid, DeptPGuid, DeptID, DeptName, DeptNameAll, DeptOrder
+                    FROM CMSDept
+                    ORDER BY DeptNameAll");
+
+                string strJson = Newtonsoft.Json.JsonConvert.SerializeObject(ds.Tables[0], Newtonsoft.Json.Formatting.Indented);
+
+                if (ds.Tables[0].Rows.Count > 0)
+                    return Ok(strJson);
+                else
+                    return StatusCode(204);
+            }
+            catch (Exception ex)
+            {
+                string errMsg = Newtonsoft.Json.JsonConvert.SerializeObject(ex.Message, Newtonsoft.Json.Formatting.Indented);
+                return BadRequest(errMsg);
+            }
+        }
+
+        /// <summary>
+        /// 取得部門成員
+        /// </summary>
+        [HttpGet]
+        public ActionResult GetDeptMembers(string DeptGuid)
+        {
+            try
+            {
+                using SqlCommand cmd = new SqlCommand();
+                cmd.Parameters.AddWithValue("@DeptGuid", DeptGuid);
+                cmd.CommandText = @"
+                    SELECT A.UserGuid, B.UserId, B.UserName, B.UserTitle, 
+                           A.DeptGuid, A.IsDeptAdmin
+                    FROM CMSUserInDept A
+                    INNER JOIN vw_CMSUser B ON A.UserGuid = B.UserGuid
+                    WHERE A.DeptGuid = @DeptGuid
+                    ORDER BY B.UserId";
+
+                using DataSet ds = SqlHelper.ExecuteDataset(cmd);
+                string strJson = Newtonsoft.Json.JsonConvert.SerializeObject(ds.Tables[0], Newtonsoft.Json.Formatting.Indented);
+
+                if (ds.Tables[0].Rows.Count > 0)
+                    return Ok(strJson);
+                else
+                    return StatusCode(204);
+            }
+            catch (Exception ex)
+            {
+                string errMsg = Newtonsoft.Json.JsonConvert.SerializeObject(ex.Message, Newtonsoft.Json.Formatting.Indented);
+                return BadRequest(errMsg);
+            }
+        }
+
+        #endregion
+
+        #region 角色權限 API
+
+        /// <summary>
+        /// 取得角色清單
+        /// </summary>
+        [HttpGet]
+        public ActionResult GetRoles()
+        {
+            try
+            {
+                using DataSet ds = SqlHelper.ExecuteDataset(@"
+                    SELECT RoleGuid, RoleName, RoleDesc, IsActive
+                    FROM CMSRole
+                    WHERE IsActive = 1
+                    ORDER BY RoleName");
+
+                string strJson = Newtonsoft.Json.JsonConvert.SerializeObject(ds.Tables[0], Newtonsoft.Json.Formatting.Indented);
+
+                if (ds.Tables[0].Rows.Count > 0)
+                    return Ok(strJson);
+                else
+                    return StatusCode(204);
+            }
+            catch (Exception ex)
+            {
+                string errMsg = Newtonsoft.Json.JsonConvert.SerializeObject(ex.Message, Newtonsoft.Json.Formatting.Indented);
+                return BadRequest(errMsg);
+            }
+        }
+
+        /// <summary>
+        /// 取得使用者的角色
+        /// </summary>
+        [HttpGet]
+        public ActionResult GetUserRoles(string UserGuid)
+        {
+            try
+            {
+                using SqlCommand cmd = new SqlCommand();
+                cmd.Parameters.AddWithValue("@UserGuid", UserGuid);
+                cmd.CommandText = @"
+                    SELECT A.RoleGuid, B.RoleName, B.RoleDesc
+                    FROM CMSUserInRole A
+                    INNER JOIN CMSRole B ON A.RoleGuid = B.RoleGuid
+                    WHERE A.UserGuid = @UserGuid AND B.IsActive = 1
+                    ORDER BY B.RoleName";
+
+                using DataSet ds = SqlHelper.ExecuteDataset(cmd);
+                string strJson = Newtonsoft.Json.JsonConvert.SerializeObject(ds.Tables[0], Newtonsoft.Json.Formatting.Indented);
+
+                if (ds.Tables[0].Rows.Count > 0)
+                    return Ok(strJson);
+                else
+                    return StatusCode(204);
+            }
+            catch (Exception ex)
+            {
+                string errMsg = Newtonsoft.Json.JsonConvert.SerializeObject(ex.Message, Newtonsoft.Json.Formatting.Indented);
+                return BadRequest(errMsg);
+            }
+        }
+
+        /// <summary>
+        /// 分配角色給使用者
+        /// </summary>
+        [HttpPost]
+        public ActionResult AssignUserRole([FromBody] System.Text.Json.JsonElement obj)
+        {
+            try
+            {
+                string userGuid = obj.GetProperty("UserGuid").GetString();
+                string roleGuid = obj.GetProperty("RoleGuid").GetString();
+                
+                using SqlCommand cmd = new SqlCommand();
+                cmd.Parameters.AddWithValue("@UserGuid", userGuid);
+                cmd.Parameters.AddWithValue("@RoleGuid", roleGuid);
+
+                // 檢查是否已存在
+                cmd.CommandText = @"
+                    IF NOT EXISTS (SELECT 1 FROM CMSUserInRole WHERE UserGuid = @UserGuid AND RoleGuid = @RoleGuid)
+                    BEGIN
+                        INSERT INTO CMSUserInRole (UserGuid, RoleGuid)
+                        VALUES (@UserGuid, @RoleGuid)
+                        SELECT 1
+                    END
+                    ELSE
+                        SELECT 0";
+
+                int result = SqlHelper.ExecuteScalar<int>(cmd);
+
+                if (result > 0)
+                    return Ok(new { success = true, message = "角色分配成功" });
+                else
+                    return Ok(new { success = false, message = "角色已存在" });
+            }
+            catch (Exception ex)
+            {
+                string errMsg = Newtonsoft.Json.JsonConvert.SerializeObject(ex.Message, Newtonsoft.Json.Formatting.Indented);
+                return BadRequest(errMsg);
+            }
+        }
+
+        /// <summary>
+        /// 移除使用者角色
+        /// </summary>
+        [HttpPost]
+        public ActionResult RemoveUserRole([FromBody] System.Text.Json.JsonElement obj)
+        {
+            try
+            {
+                string userGuid = obj.GetProperty("UserGuid").GetString();
+                string roleGuid = obj.GetProperty("RoleGuid").GetString();
+                
+                using SqlCommand cmd = new SqlCommand();
+                cmd.Parameters.AddWithValue("@UserGuid", userGuid);
+                cmd.Parameters.AddWithValue("@RoleGuid", roleGuid);
+
+                cmd.CommandText = @"
+                    DELETE FROM CMSUserInRole 
+                    WHERE UserGuid = @UserGuid AND RoleGuid = @RoleGuid";
+
+                int affected = SqlHelper.ExecuteNonQuery(cmd);
+
+                if (affected > 0)
+                    return Ok(new { success = true, message = "角色移除成功" });
+                else
+                    return StatusCode(204);
+            }
+            catch (Exception ex)
+            {
+                string errMsg = Newtonsoft.Json.JsonConvert.SerializeObject(ex.Message, Newtonsoft.Json.Formatting.Indented);
+                return BadRequest(errMsg);
+            }
+        }
+
+        #endregion
+
+        #region 系統代碼 API
+
+        /// <summary>
+        /// 取得系統代碼
+        /// </summary>
+        [HttpGet]
+        public ActionResult GetCMSCodes(string CodesType)
+        {
+            try
+            {
+                using SqlCommand cmd = new SqlCommand();
+                cmd.Parameters.AddWithValue("@CodesType", CodesType);
+                cmd.CommandText = @"
+                    SELECT CodesGuid, CodesType, CodesID, CodesName, CodesDesc1, CodesDesc2, CodesDesc3
+                    FROM RS_CMSCodes(@CodesType)
+                    ORDER BY CodesDesc3, CodesID";
+
+                using DataSet ds = SqlHelper.ExecuteDataset(cmd);
+                string strJson = Newtonsoft.Json.JsonConvert.SerializeObject(ds.Tables[0], Newtonsoft.Json.Formatting.Indented);
+
+                if (ds.Tables[0].Rows.Count > 0)
+                    return Ok(strJson);
+                else
+                    return StatusCode(204);
+            }
+            catch (Exception ex)
+            {
+                string errMsg = Newtonsoft.Json.JsonConvert.SerializeObject(ex.Message, Newtonsoft.Json.Formatting.Indented);
+                return BadRequest(errMsg);
+            }
+        }
+
+        /// <summary>
+        /// 取得所有代碼類型
+        /// </summary>
+        [HttpGet]
+        public ActionResult GetCodesTypes()
+        {
+            try
+            {
+                using DataSet ds = SqlHelper.ExecuteDataset(@"
+                    SELECT DISTINCT CodesType
+                    FROM CMSCodes
+                    WHERE IsActive = 1
+                    ORDER BY CodesType");
+
+                string strJson = Newtonsoft.Json.JsonConvert.SerializeObject(ds.Tables[0], Newtonsoft.Json.Formatting.Indented);
+
+                if (ds.Tables[0].Rows.Count > 0)
+                    return Ok(strJson);
+                else
+                    return StatusCode(204);
+            }
+            catch (Exception ex)
+            {
+                string errMsg = Newtonsoft.Json.JsonConvert.SerializeObject(ex.Message, Newtonsoft.Json.Formatting.Indented);
+                return BadRequest(errMsg);
+            }
+        }
+
+        #endregion
+
+        #region 系統日誌 API
+
+        /// <summary>
+        /// 取得事件日誌
+        /// </summary>
+        [HttpGet]
+        public ActionResult GetEventLog(string StartDate = "", string EndDate = "", string EventCode = "", int PageSize = 50, int PageIndex = 1)
+        {
+            try
+            {
+                using SqlCommand cmd = new SqlCommand();
+                
+                string whereClause = "WHERE 1=1";
+                
+                if (!string.IsNullOrEmpty(StartDate))
+                {
+                    cmd.Parameters.AddWithValue("@StartDate", DateTime.Parse(StartDate));
+                    whereClause += " AND CreatedDate >= @StartDate";
+                }
+
+                if (!string.IsNullOrEmpty(EndDate))
+                {
+                    cmd.Parameters.AddWithValue("@EndDate", DateTime.Parse(EndDate).AddDays(1));
+                    whereClause += " AND CreatedDate < @EndDate";
+                }
+
+                if (!string.IsNullOrEmpty(EventCode))
+                {
+                    cmd.Parameters.AddWithValue("@EventCode", EventCode);
+                    whereClause += " AND EventCode = @EventCode";
+                }
+
+                cmd.CommandText = $@"
+                    SELECT EventGuid, EventCode, EventName, Parameter, 
+                           CreatedUserID, CreatedDate
+                    FROM CMSEventLog
+                    {whereClause}
+                    ORDER BY CreatedDate DESC
+                    OFFSET {(PageIndex - 1) * PageSize} ROWS
+                    FETCH NEXT {PageSize} ROWS ONLY";
+
+                using DataSet ds = SqlHelper.ExecuteDataset(cmd);
+                string strJson = Newtonsoft.Json.JsonConvert.SerializeObject(ds.Tables[0], Newtonsoft.Json.Formatting.Indented);
+
+                if (ds.Tables[0].Rows.Count > 0)
+                    return Ok(strJson);
+                else
+                    return StatusCode(204);
+            }
+            catch (Exception ex)
+            {
+                string errMsg = Newtonsoft.Json.JsonConvert.SerializeObject(ex.Message, Newtonsoft.Json.Formatting.Indented);
+                return BadRequest(errMsg);
+            }
+        }
+
+        /// <summary>
+        /// 記錄事件日誌
+        /// </summary>
+        [HttpPost]
+        public ActionResult LogEvent([FromBody] System.Text.Json.JsonElement obj)
+        {
+            try
+            {
+                string eventCode = obj.GetProperty("EventCode").GetString();
+                string eventName = obj.GetProperty("EventName").GetString();
+                string parameter = Utility.CheckObjectKey(obj, "Parameter") ? obj.GetProperty("Parameter").GetString() : "";
+                string createdUserID = Utility.CheckObjectKey(obj, "CreatedUserID") ? obj.GetProperty("CreatedUserID").GetString() : "";
+
+                using SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = @"
+                    INSERT INTO CMSEventLog (EventGuid, EventCode, EventName, Parameter, CreatedUserID, CreatedDate)
+                    VALUES (NEWID(), @EventCode, @EventName, @Parameter, @CreatedUserID, GETDATE())";
+
+                cmd.Parameters.AddWithValue("@EventCode", eventCode);
+                cmd.Parameters.AddWithValue("@EventName", eventName);
+                cmd.Parameters.AddWithValue("@Parameter", parameter);
+                cmd.Parameters.AddWithValue("@CreatedUserID", createdUserID);
+
+                SqlHelper.ExecuteNonQuery(cmd);
+
+                return Ok(new { success = true, message = "日誌記錄成功" });
+            }
+            catch (Exception ex)
+            {
+                string errMsg = Newtonsoft.Json.JsonConvert.SerializeObject(ex.Message, Newtonsoft.Json.Formatting.Indented);
+                return BadRequest(errMsg);
+            }
+        }
+
+        #endregion
+
+        #region 選單日誌 API
+
+        /// <summary>
+        /// 記錄選單存取日誌
+        /// </summary>
+        [HttpPost]
+        public ActionResult SetCMSMenuLog([FromBody] System.Text.Json.JsonElement obj)
+        {
+            try
+            {
+                string menuGuid = obj.GetProperty("MenuGuid").GetString();
+                string userGuid = obj.GetProperty("UserGuid").GetString();
+
+                using SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = @"
+                    INSERT INTO CMSMenuLog (MenuLogGuid, MenuGuid, UserGuid, VisitDate)
+                    VALUES (NEWID(), @MenuGuid, @UserGuid, GETDATE())";
+
+                cmd.Parameters.AddWithValue("@MenuGuid", menuGuid);
+                cmd.Parameters.AddWithValue("@UserGuid", userGuid);
+
+                SqlHelper.ExecuteNonQuery(cmd);
+
+                return Ok(new { success = true, message = "選單日誌記錄成功" });
             }
             catch (Exception ex)
             {
