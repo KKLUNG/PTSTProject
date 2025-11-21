@@ -57,7 +57,6 @@ export function apiGet<T = any>(
   params?: ApiParams
 ): Promise<ApiResponse<T>> {
   return new Promise((resolve, reject) => {
-    console.log('🔍 Debug apiGet - URL:', apiUrl, 'Token:', auth.getToken());
     const config: AxiosRequestConfig = {
       method: 'GET',
       baseURL: appInfo.serverUrl ?? undefined,

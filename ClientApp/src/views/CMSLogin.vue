@@ -482,10 +482,10 @@ const logining = async (para: { userId: string; password: string }) => {
   try {
     const res = await apiPost("/api/auth/login", para);
     if (res.status == 200) {
-      console.log(res.data[0]);
       if (res.data[0].isIPAllow == "1") {
         // 登入成功
-        auth.logIn(res.data[0].Token);
+        console.log(res.data[0] ,"登入成功");
+        auth.logIn(res.data[0].token);
         appInfo.userInfo.userId = res.data[0].UserId;
         appInfo.userInfo.userImageUrl = res.data[0].UserImageUrl;
         appInfo.userInfo.userGuid = res.data[0].UserGuid;

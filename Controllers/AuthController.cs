@@ -5,6 +5,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using PTSDProject.Data;
+using PTSDProject.Helpers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Data.SqlClient;
 using Microsoft.AspNetCore.Mvc.Routing;
@@ -188,13 +189,20 @@ namespace PTSDProject.Controllers
                     
                     string systemSender = _configuration.GetValue<string>("AppSettings:MailAccount");
 
-                    // TODO: 實作郵件發送
-                    // Mail.SendSimpleMail(systemSender, to, cc, bcc, subject, true, body);
+                    // 發送郵件
+                    try
+                    {
+                        Mail.SendSimpleMail(systemSender, to, cc, bcc, subject, true, body);
+                        Console.WriteLine($"📧 已發送密碼到: {to}");
+                    }
+                    catch (Exception mailEx)
+                    {
+                        Console.WriteLine($"⚠️ 郵件發送失敗: {mailEx.Message}");
+                        // 郵件失敗不影響回應，仍然返回成功
+                    }
                     
-                    // TODO: 實作推播通知
+                    // TODO: 實作推播通知 (需要 PTSD.Notification.cs)
                     // AppNotification.PushMessage(body, userGuid);
-                    
-                    Console.WriteLine($"📧 發送密碼到: {to}, 內容: {body}");
                     
                     return Ok();
                 }
