@@ -81,21 +81,26 @@ interface MenuItem {
 const loadMainMenu = async () => {
   loading.value = true
   try {
-    const userGuid = appInfo.userInfo.userGuid || ''
-    const language = appInfo.language || 'zhTW'
+    console.log(appInfo.userInfo);
+    
+    const userGuid = appInfo.userInfo.userGuid;
+    const language = appInfo.language
+    
+    console.log(userGuid);
+    
+
     if (!userGuid) {
       showAlert('使用者資訊不完整，請重新登入', appInfo.title)
       router.push('/CMSLogin')
       return
     }
+
     var para = {
       UserGuid: userGuid,
       Language: language
     }
-    console.log('2');
-    
     const response = await apiGet('/api/CMS/GetCMSMainMenu', para)
-    console.log('3');
+
     if (response.status === 200 && response.data) {
       menuItems.value = (typeof response.data === 'string') 
         ? JSON.parse(response.data) 

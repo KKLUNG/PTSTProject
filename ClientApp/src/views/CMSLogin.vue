@@ -484,20 +484,20 @@ const logining = async (para: { userId: string; password: string }) => {
     if (res.status == 200) {
       if (res.data[0].isIPAllow == "1") {
         // 登入成功
-        console.log(res.data[0] ,"登入成功");
+        console.log(res.data[0]);
         auth.logIn(res.data[0].token);
-        appInfo.userInfo.userId = res.data[0].UserId;
-        appInfo.userInfo.userImageUrl = res.data[0].UserImageUrl;
-        appInfo.userInfo.userGuid = res.data[0].UserGuid;
-        appInfo.userInfo.userName = res.data[0].UserName;
-        appInfo.userInfo.deptGuid = res.data[0].DeptGuid;
-        appInfo.userInfo.deptName = res.data[0].DeptName;
-        appInfo.userInfo.deptNameAll = res.data[0].DeptNameAll;
-        appInfo.userInfo.userTitle = res.data[0].UserTitle;
-        appInfo.userInfo.groupNames = res.data[0].GroupNames;
-        appInfo.userInfo.groupGuids = res.data[0].GroupGuids;
+        appInfo.userInfo.userId = res.data[0].userId;
+        appInfo.userInfo.userImageUrl = res.data[0].userImageUrl;
+        appInfo.userInfo.userGuid = res.data[0].userGuid;
+        appInfo.userInfo.userName = res.data[0].userName;
+        appInfo.userInfo.deptGuid = res.data[0].deptGuid;
+        appInfo.userInfo.deptName = res.data[0].deptName;
+        appInfo.userInfo.deptNameAll = res.data[0].deptNameAll;
+        appInfo.userInfo.userTitle = res.data[0].userTitle;
+        appInfo.userInfo.groupNames = res.data[0].groupNames;
+        appInfo.userInfo.groupGuids = res.data[0].groupGuids;
 
-        const lastLoginDate = res.data[0].LastActiveDate;
+        // const lastLoginDate = res.data[0].LastActiveDate;
         window.localStorage.setItem('userId', para.userId);
         window.localStorage.setItem('password', para.password);
 

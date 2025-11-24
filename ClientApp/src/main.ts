@@ -3,6 +3,11 @@ import './themes/generated/theme.base.css'
 import './themes/generated/theme.additional.css'
 
 // ============================================
+// DevExtreme Themes 初始化（必須在 Vue 之前）
+// ============================================
+import themes from 'devextreme/ui/themes'
+
+// ============================================
 // Vue 3 核心
 // ============================================
 import { createApp } from 'vue'
@@ -102,6 +107,93 @@ app.config.globalProperties.$footerTabs = []
 app.config.globalProperties.$speechBot = window.speechSynthesis
 
 // ============================================
+// 註冊控件組件
+// ============================================
+// 基礎輸入控件
+import CHK from '@/controls/CHK.vue'
+import TX2 from '@/controls/TX2.vue'
+import TXC from '@/controls/TXC.vue'
+import TTT from '@/controls/TTT.vue'
+import SWI from '@/controls/SWI.vue'
+import RBO from '@/controls/RBO.vue'
+import CHT from '@/controls/CHT.vue'
+import TIM from '@/controls/TIM.vue'
+import DA2 from '@/controls/DA2.vue'
+import DT2 from '@/controls/DT2.vue'
+import CHO from '@/controls/CHO.vue'
+import CHH from '@/controls/CHH.vue'
+import TI2 from '@/controls/TI2.vue'
+import DAM from '@/controls/DAM.vue'
+import DM2 from '@/controls/DM2.vue'
+import DD2 from '@/controls/DD2.vue'
+import DDT from '@/controls/DDT.vue'
+import LBL from '@/controls/LBL.vue'
+import LBH from '@/controls/LBH.vue'
+import LBT from '@/controls/LBT.vue'
+import LBD from '@/controls/LBD.vue'
+import LNG from '@/controls/LNG.vue'
+import CBM from '@/controls/CBM.vue'
+import CBT from '@/controls/CBT.vue'
+import CBP from '@/controls/CBP.vue'
+import CBG from '@/controls/CBG.vue'
+// 表單/容器控件
+import FRM from '@/controls/FRM.vue'
+import TAB from '@/controls/TAB.vue'
+// 數據展示控件
+import GRD from '@/controls/GRD.vue'
+// 文件/媒體控件
+import FIL from '@/controls/FIL.vue'
+import FIM from '@/controls/FIM.vue'
+import HDD from '@/controls/HDD.vue'
+import HTM from '@/controls/HTM.vue'
+// 彈窗控件
+import POG from '@/controls/POG.vue'
+// TODO: 繼續註冊其他控件 (P2 優先級)
+// ... 其他控件
+
+// 註冊基礎控件
+app.component('CHK', CHK)
+app.component('TX2', TX2)
+app.component('TXC', TXC)
+app.component('TTT', TTT)
+app.component('SWI', SWI)
+app.component('RBO', RBO)
+app.component('CHT', CHT)
+app.component('TIM', TIM)
+app.component('DA2', DA2)
+app.component('DT2', DT2)
+app.component('CHO', CHO)
+app.component('CHH', CHH)
+app.component('TI2', TI2)
+app.component('DAM', DAM)
+app.component('DM2', DM2)
+app.component('DD2', DD2)
+app.component('DDT', DDT)
+app.component('LBL', LBL)
+app.component('LBH', LBH)
+app.component('LBT', LBT)
+app.component('LBD', LBD)
+app.component('LNG', LNG)
+app.component('CBM', CBM)
+app.component('CBT', CBT)
+app.component('CBP', CBP)
+app.component('CBG', CBG)
+// 表單/容器控件
+app.component('FRM', FRM)
+app.component('TAB', TAB)
+// 數據展示控件
+app.component('GRD', GRD)
+// 文件/媒體控件
+app.component('FIL', FIL)
+app.component('FIM', FIM)
+app.component('HDD', HDD)
+app.component('HTM', HTM)
+// 彈窗控件
+app.component('POG', POG)
+// TODO: 繼續註冊其他控件 (P2 優先級)
+// ... 其他控件
+
+// ============================================
 // 設定 DevExtreme 語系
 // ============================================
 // TODO: 載入語系檔案
@@ -110,9 +202,15 @@ app.config.globalProperties.$speechBot = window.speechSynthesis
 locale('zh-TW')
 
 // ============================================
-// 掛載應用
+// 使用 themes.initialized() 確保 DevExtreme 樣式正確載入
 // ============================================
-app.mount('#app')
+themes.initialized(() => {
+  // ============================================
+  // 掛載應用
+  // ============================================
+  app.mount('#app')
 
-console.log('✅ PTSDProject 應用程式已啟動')
-console.log('📦 Vue 版本:', app.version)
+  console.log('✅ PTSDProject 應用程式已啟動')
+  console.log('📦 Vue 版本:', app.version)
+  console.log('🎨 DevExtreme Themes 已初始化')
+})
