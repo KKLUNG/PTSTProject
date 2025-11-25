@@ -5,7 +5,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
-import { appInfo } from '@/utils/app-Info'
+import appInfo from '@/utils/app-Info'
 
 // ============================================
 // Props
@@ -41,8 +41,8 @@ onMounted(() => {
   const wfSNMsgGuid = params.length > 1 ? params[1] : ''
   
   // 處理 SSO 目標 URL
-  let target = props.XMLName.replaceAll('^^^', '/')
-  target = target.replaceAll('$$$', '/')
+  let target = props.XMLName.replace(/\^\^\^/g, '/')
+  target = target.replace(/\$\$\$/g, '/')
   ssoTarget.value = target
 
   // 開啟 SSO 視窗

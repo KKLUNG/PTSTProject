@@ -4,8 +4,14 @@ import{
 } from "vue-router";
 
 import auth from "./utils/auth";
+// 佈局組件
 import simpleLayout from "./layouts/single-card.vue";
 import sideNavOuterToolbar from "./layouts/side-nav-outer-toolbar.vue";
+import sideNavInnerToolbar from "./layouts/side-nav-inner-toolbar.vue";
+import mainMenuLayout from "./layouts/MainMenuLayout.vue";
+import noMenuLayout from "./layouts/noMenuLayout.vue";
+import mobileWFSLayout from "./layouts/mobileWFSLayout.vue";
+// 視圖組件
 import CMSLogin from "./views/CMSLogin.vue";
 import CMSHomePage from "./views/CMSHomePage.vue";
 import CMSMainMenu from "./views/CMSMainMenu.vue";

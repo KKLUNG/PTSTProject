@@ -109,7 +109,7 @@ import DxPopup from 'devextreme-vue/popup'
 import DxButton from 'devextreme-vue/button'
 import DxScrollView from 'devextreme-vue/scroll-view'
 import { useControlBase } from '@/composables/useControlBase'
-import { getToken } from '@/utils/auth'
+import auth from '@/utils/auth'
 import { apiPost } from '@/utils/api-util'
 import appInfo from '@/utils/app-Info'
 
@@ -222,7 +222,7 @@ const allowFileExtensionArray = ref([
 const maxFileSize = ref(152428800)
 
 const uploadHeaders = computed(() => ({
-  Authorization: `Bearer ${getToken()}`
+  Authorization: `Bearer ${auth.getToken()}`
 }))
 
 // ============================================

@@ -241,8 +241,86 @@ onMounted(() => {
 })
 </script>
 
-<style>
-.home { max-width: 720px; margin: 40px auto; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+<style lang="scss" scoped>
+@use "sass:math";
+$gutter-width: 0px;
+$grid-num: 12;
+
+@mixin pad {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+%col {
+  padding-left: math.div($gutter-width, 2);
+  padding-right: math.div($gutter-width, 2);
+}
+
+@for $i from 1 through $grid-num {
+  .col-#{$i} {
+    @extend %col;
+    width: 100% * math.div($i, $grid-num);
+    @include pad {
+      width: 100%;
+    }
+  }
+}
+
+.col-lg-4 {
+  @extend %col;
+  width: 33.333333%;
+  @include pad {
+    width: 100%;
+  }
+}
+
+.col-lg-6 {
+  @extend %col;
+  width: 50%;
+  @include pad {
+    width: 100%;
+  }
+}
+
+.col-lg-8 {
+  @extend %col;
+  width: 66.666667%;
+  @include pad {
+    width: 100%;
+  }
+}
+
+.col-md-12 {
+  @extend %col;
+  width: 100%;
+}
+
+.content-block {
+  margin: 2px 2px;
+}
+
+.dx-card {
+  background: white;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
 </style>
 
 

@@ -142,7 +142,7 @@ import DxDataGrid from 'devextreme-vue/data-grid'
 import DxHtmlEditor from 'devextreme-vue/html-editor'
 import appInfo from '@/utils/app-Info'
 import { apiPost } from '@/utils/api-util'
-import { getToken } from '@/utils/auth'
+import auth from '@/utils/auth'
 
 // ============================================
 // Props
@@ -160,6 +160,17 @@ const props = withDefaults(defineProps<Props>(), {
   XMLCaption: '',
   pageKey: ''
 })
+
+// ============================================
+// 輔助函數
+// ============================================
+const getNewGuid = (): string => {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
+    const r = (Math.random() * 16) | 0
+    const v = c == 'x' ? r : (r & 0x3) | 0x8
+    return v.toString(16)
+  })
+}
 
 // ============================================
 // 狀態變數
@@ -216,7 +227,7 @@ const uploadMode = computed(() => {
 })
 
 const uploadHeaders = computed(() => ({
-  Authorization: `Bearer ${getToken()}`
+  Authorization: `Bearer ${auth.getToken()}`
 }))
 
 // ============================================
@@ -224,14 +235,6 @@ const uploadHeaders = computed(() => ({
 // ============================================
 const isNullOrEmpty = (value: any): boolean => {
   return value === null || value === undefined || value === ''
-}
-
-const getNewGuid = (): string => {
-  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
-    const r = (Math.random() * 16) | 0
-    const v = c == 'x' ? r : (r & 0x3) | 0x8
-    return v.toString(16)
-  })
 }
 
 const onShowDebugPopup = () => {

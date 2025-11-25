@@ -121,7 +121,7 @@ import DxPopup from 'devextreme-vue/popup'
 import DxButton from 'devextreme-vue/button'
 import DxScrollView from 'devextreme-vue/scroll-view'
 import { useControlBase } from '@/composables/useControlBase'
-import { getToken } from '@/utils/auth'
+import auth from '@/utils/auth'
 import { apiPost, apiDeleteFile } from '@/utils/api-util'
 import appInfo from '@/utils/app-Info'
 
@@ -184,8 +184,8 @@ const logoUrl = computed(() => {
 // ============================================
 // 狀態變數
 // ============================================
-const fileUrl = ref<string | null>(null)
-const fileName = ref('')
+const fileUrl = ref<string | undefined>(undefined)
+const fileName = ref<string | undefined>(undefined)
 const orgFileUrl = ref<string | null>(null)
 const orgFileName = ref('')
 const showStyle = ref('')
@@ -207,7 +207,7 @@ const otherServerUrl = ref('')
 const hinttrash = ref('刪除')
 
 const uploadHeaders = computed(() => ({
-  Authorization: `Bearer ${getToken()}`
+  Authorization: `Bearer ${auth.getToken()}`
 }))
 
 // ============================================
@@ -256,8 +256,8 @@ const onUploaded = (e: any) => {
 }
 
 const onDelete = () => {
-  fileUrl.value = null
-  fileName.value = null
+  fileUrl.value = undefined
+  fileName.value = undefined
 
   if (isForm.value && props.oData) {
     if (props.multiFields.length >= 1) props.oData[props.multiFields[0]] = null
@@ -276,7 +276,7 @@ const onDelete = () => {
   }
   
   orgFileUrl.value = null
-  fileUrl.value = null
+  fileUrl.value = undefined
 }
 
 const onUploadStarted = () => {
@@ -307,7 +307,7 @@ const onFileClick = () => {
     if (!isNullOrEmpty(otherServerUrl.value)) {
       window.open(fileUrl.value || '', '_blank')
     } else {
-      downloadFileByUrl(fileUrl.value || '', fileName.value)
+      downloadFileByUrl(fileUrl.value || '', fileName.value || '')
     }
   }
 }
@@ -372,7 +372,7 @@ const onPicPopupHidden = () => {
 }
 
 const onFTPFileClick = async () => {
-  const realFileName = fileName.value.split('/').pop() || ''
+  const realFileName = (fileName.value || '').split('/').pop() || ''
   try {
     const res = await apiPost('/api/func/GetFTPFile', {
       FileName: fileName.value,
@@ -475,7 +475,7 @@ onMounted(() => {
 
   fileUrl.value =
     props.value == null
-      ? null
+      ? undefined
       : (props.value || '').indexOf('data:image') > -1
       ? props.value
       : (isNullOrEmpty(otherServerUrl.value)

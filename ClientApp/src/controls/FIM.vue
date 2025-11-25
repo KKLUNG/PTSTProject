@@ -157,7 +157,7 @@ import DxButton from 'devextreme-vue/button'
 import DxScrollView from 'devextreme-vue/scroll-view'
 import DxLoadPanel from 'devextreme-vue/load-panel'
 import { useControlBase } from '@/composables/useControlBase'
-import { getToken } from '@/utils/auth'
+import auth from '@/utils/auth'
 import { apiPost, apiDeleteFile } from '@/utils/api-util'
 import appInfo from '@/utils/app-Info'
 
@@ -246,7 +246,7 @@ const isDeleteServerFile = ref(true)
 const isFIMPopupVisible = ref(false)
 
 const uploadHeaders = computed(() => ({
-  Authorization: `Bearer ${getToken()}`
+  Authorization: `Bearer ${auth.getToken()}`
 }))
 
 const uploadForm = computed(() => ({

@@ -194,6 +194,41 @@ app.component('POG', POG)
 // ... 其他控件
 
 // ============================================
+// 註冊 Admin 組件（用於 CMSPage 動態載入）
+// ============================================
+import AdminFormView from '@/components/AdminFormView.vue'
+import AdminGridForm from '@/components/AdminGridForm.vue'
+import AdminTab from '@/components/AdminTab.vue'
+import AdminFrame from '@/components/AdminFrame.vue'
+import AdminTreeList from '@/components/AdminTreeList.vue'
+import AdminCalendar from '@/components/AdminCalendar.vue'
+import AdminChart from '@/components/AdminChart.vue'
+import AdminPivot from '@/components/AdminPivot.vue'
+import AdminGantt from '@/components/AdminGantt.vue'
+import AdminTileView from '@/components/AdminTileView.vue'
+import AdminImport from '@/components/AdminImport.vue'
+import AdminFullTextSearch from '@/components/AdminFullTextSearch.vue'
+import AdminCustom from '@/components/AdminCustom.vue'
+import AdminSSO from '@/components/AdminSSO.vue'
+import AdminWFSForm from '@/components/AdminWFSForm.vue'
+
+app.component('AdminFormView', AdminFormView)
+app.component('AdminGridForm', AdminGridForm)
+app.component('AdminTab', AdminTab)
+app.component('AdminFrame', AdminFrame)
+app.component('AdminTreeList', AdminTreeList)
+app.component('AdminCalendar', AdminCalendar)
+app.component('AdminChart', AdminChart)
+app.component('AdminPivot', AdminPivot)
+app.component('AdminGantt', AdminGantt)
+app.component('AdminTileView', AdminTileView)
+app.component('AdminImport', AdminImport)
+app.component('AdminFullTextSearch', AdminFullTextSearch)
+app.component('AdminCustom', AdminCustom)
+app.component('AdminSSO', AdminSSO)
+app.component('AdminWFSForm', AdminWFSForm)
+
+// ============================================
 // 設定 DevExtreme 語系
 // ============================================
 // TODO: 載入語系檔案
